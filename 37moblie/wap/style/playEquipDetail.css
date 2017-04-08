@@ -1,0 +1,44 @@
+/*此页面背景色*/
+.cd-main-content{background: #fff;    padding-bottom: 0rem;}
+.cd-main-content:after{position: absolute;right: 0; bottom: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #e3e3e3;}
+
+.cd-main-content .playTit{width: 100%;display: block;padding: 0 3%;position: relative;}
+.cd-main-content .playTit:before{position: absolute;right: 0; top: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #e3e3e3;}
+.playTit a.playDetailImg{width:100%;height: 3.08rem;overflow: hidden;padding-top: .24rem;display: block;}
+.playTit a.playDetailImg img{width: 100%;display: block;}
+.playCont{padding: 0 3%;width: 100%;}
+.playCont span{width: 100%;text-align: left;display: block;margin: .3rem 0 .2rem 0;}
+.playCont span i{position: relative;    vertical-align: sub;}
+.playCont span i:before{content: '\e603';font-family: threeSeven !important;font-size: 37px;color: #00a0d5;}
+.playCont span i b{position: absolute;    right: 8px;  top: -5px;}
+.playCont span h1{width: 50%;display: inline-block;}
+.playCont em{width: 100%;display: block;}
+
+
+
+/*设备详情 轮播图*/
+.play {width: 100%;height:auto;margin:0;margin: 0 auto;}
+
+.big_pic {width: 100%;height: 235px;overflow: hidden;position: relative;margin: 0 auto;}
+
+.big_pic li {width: 100%;height: 235px;overflow: hidden;position: absolute;top: 0;left: 0;z-index: 0;    background: #fff;}
+.big_pic li img{width: 100%;}
+.mark_left { width: 200px; height: 235px; position:absolute; left: 0; top: 0;  filter: alpha(opacity:10); opacity: 0.1; z-index:3000; }
+
+.mark_right { width: 200px; height: 235px; position: absolute; left: 200px; top: 0;  filter: alpha(opacity:10); opacity: 0.1; z-index: 3000; }
+
+.big_pic .prev { width: 60px; height: 60px; background:url(../../wap/images/btn.png) no-repeat; position: absolute; top: 100px; left: 10px; z-index: 3001; filter:alpha(opacity:1); opacity:1 !important; cursor:pointer; }
+
+.big_pic .next { width: 60px; height:60px; background:url(../../wap/images/btn2.png) no-repeat 0;
+ 	
+ position: absolute; top: 100px; right: 10px; z-index: 3001; filter:alpha(opacity:1); opacity:1 !important; cursor: pointer: }
+
+.big_pic .text { position:absolute; left: 10px; top:302px; z-index:3000; color: #ccc; }
+.big_pic .length { position:absolute; right: 10px; bottom: 4px; z-index:3000; color:#ccc; }
+.big_pic .bg { width:375px; height: 25px; background: #000; filter:alpha(opacity=60); opacity: 0.6; position: absolute; z-index:2999; bottom: 0; left:0; }
+.small_pic {width: 100%;height:94px;position:relative;top:7px;overflow: hidden;background: #000;}
+.small_pic ul { height:94px; position:absolute; top: 0; left: 0; }
+.small_pic li { width: 120px; height: 94px; float: left; 
+padding-right: 10px; background: url(../../wap/images/loadingPlay.gif) no-repeat center center; cursor: pointer; filter: alpha(opacity:30); opacity:0.3; }
+.small_pic img { width: 120px; height:94px; }
+

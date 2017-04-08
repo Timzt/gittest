@@ -1,0 +1,87 @@
+@font-face {
+	font-family: threeSeven;
+	font-weight: normal;
+	font-style: normal;
+	src: url(../../wap/images/threeSeven.ttf) format('truetype')
+}
+*{box-sizing: border-box;-webkit-box-sizing:border-box;}
+body,html{overflow-x: hidden;background: #eee;}
+.mui-input-row label {
+	font-family: '微软雅黑';
+	line-height: 1.1;float: left;width: 15%;padding: 11px 15px}
+html {font-family:'微软雅黑';-webkit-text-size-adjust: 100%}
+code,kbd,pre,samp {font-family:'微软雅黑';font-size: 1em}
+body {	font-family: '微软雅黑';
+	font-size: 17px;line-height: 21px;color: #000;-webkit-overflow-scrolling: touch}
+input,select,textarea {	font-family: '微软雅黑';
+	font-size: 17px;-webkit-tap-highlight-color: transparent;-webkit-tap-highlight-color: transparent}
+
+em,i,s,b,p{font-style: normal;font-weight: normal;}	
+h1, h2, h3, h4, h5, h6,p{margin: 0;}
+ul,li{list-style: none;-webkit-padding-start:0;-webkit-margin-after:0;-webkit-margin-before:0}
+.mui-input-row .mui-btn {font-family: '微软雅黑';
+	line-height: 1.1;float: right;width: 15%;padding: 10px 15px}
+.mui-checkbox input[type=checkbox]:before,
+.mui-radio input[type=radio]:before {
+	font-family: threeSeven;font-size: 28px;
+	font-weight: 400;line-height: 1;
+	text-decoration: none;	color: #aaa;
+	border-radius: 0;background: 0 0;-webkit-font-smoothing: antialiased}
+.mui-select:before {font-family: threeSeven;
+	position: absolute;top: 8px;right: 21px;content: '\e581';color: rgba(170, 170, 170, .6)}
+.mui-search:before {font-family: threeSeven;font-size: 20px;
+	font-weight: 400;position: absolute;top: 50%;
+	right: 50%;	display: none;margin-top: -18px;
+	margin-right: 31px;	content: '\e466'}	
+.mui-navigate-right:after,
+.mui-push-left:after,
+.mui-push-right:after {font-family: threeSeven;
+	font-size: inherit;line-height: 1;
+	position: absolute;top: 50%;display: inline-block;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-decoration: none;color: #bbb;-webkit-font-smoothing: antialiased}		
+.mui-icon {font-family: threeSeven;font-size: 24px;font-weight: 400;font-style: normal;
+	line-height: 1;display: inline-block;text-decoration: none;-webkit-font-smoothing: antialiased
+}		
+.mui-bar-nav a:before{color: #fff;}	
+.mui-bar{background: #fff;box-shadow: none;}	
+a {
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    outline: none;
+}
+/*提交 共用*/
+.mui-btn-block{padding: 10px 0;width: 94%;margin: 3% auto 0 auto;}
+.mui-btn-blue, .mui-btn-primary, input[type=submit]{background-color: #3169B0;border: 1px solid #F7F7F7;}
+.mui-btn-blue.mui-active:enabled,
+.mui-btn-blue:enabled:active,
+.mui-btn-primary.mui-active:enabled,
+.mui-btn-primary:enabled:active,
+input[type=submit].mui-active:enabled,
+input[type=submit]:enabled:active {
+	color: #fff;
+	border: 1px solid #F7F7F7;
+	background-color: #3379d0
+}
+
+/*底部共用*/
+.bottom{width: 100%;text-align: center;margin-top:3%;background: #fff;position: fixed;bottom:0;z-index: 900 !important;}
+.bottom .bot_Link{width: 94%;border-bottom: 1px solid #ddd;margin: 0 3%;}
+.bot_Link span:first-child{text-align: right;}
+.bot_Link span:last-child{text-align: left;}
+.bottom span{color: #3169b0;font-size: .24rem;width: 1.38rem;height:.66rem;display: inline-block;line-height: .66rem;}
+.bottom span b{float: right;color: #ddd;}
+.bottom p{height: .99rem;display: inline-block;text-transform: uppercase;font-size: .2rem;}
+.bottom p b{display: block;}
+
+/*所有页面固定顶部兼容 通用*/
+.cont .speciIntro_cont{width: 100%;padding: 0 3%;}
+.speciIntro_cont span{font-size: .24rem !important;    line-height: 1 !important;width: 100%;}
+.fixed{position: fixed;width: 100%;top: -70px;overflow-y: auto;padding-bottom: 50px;padding-top: 50px;}
+.mui-backdrop{top: 1rem;}
+.mui-backdrop-action.mui-backdrop.mui-active, .mui-bar-backdrop.mui-backdrop.mui-active{z-index: 998 !important;}
+.mui-backdrop{z-index: -1 !important;}
+/*新遮罩层*/
+.mui-off-canvas-left, .mui-off-canvas-right{width: 42%;}
+.mui-scrollbar-vertical{width: 0;}
+

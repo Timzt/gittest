@@ -1,0 +1,88 @@
+.ticketTitle,.menuTitle{overflow: hidden;display: block;height: .69rem;width: 100%;-webkit-transition: all .3s ease-in;-moz-transition: all .3s ease-in;transition: all .3s ease-in;text-align: center;margin: 0 auto;position: relative;}
+ .menuTitle:after { position: absolute; right: 3px; bottom: 0px; left: 3px; height: 1px; content: '';  -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #11c0f3; z-index: 8;}   
+.ticketTitle{position: relative;}    
+.ticketTitle:after{position: absolute;right: 0; bottom: 1px; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #fcb115;}    
+.ticketTitle span,.menuTitle span{position: relative;width: 45%;height: 43px;line-height: 40px;text-align:center;display: block;float: left;cursor: pointer;color: #888;font-weight: normal !important;background: url(../../wap/images/map_smallBg3.png) no-repeat;background-size: 100%;}
+.ticketTitle span:last-child,.menuTitle span:last-child{margin-left: -1px;background: #eee;border: 1px solid #bbb;border-bottom: 0;border-top-left-radius: 6px;border-top-right-radius: 6px;}
+.ticketTitle span:first-child{margin-left: 5%;}
+.ticketTitle span.active2{border-bottom: 1px solid #fff; height: 40px;  background: url(../../wap/images/map_smallBg.png) bottom  no-repeat;font-weight:bolder !important; color: #fcb115;  background-size: 100%; }
+.menuTitle span.active2{border: 0;border-bottom: 1px solid #fff;height: .69rem;background: url(../../wap/images/map_smallBg2.png) bottom  no-repeat;font-weight:bolder !important;color: #11c0f3;background-size: 100%;}
+.ticketTitle span.active2:after,.menuTitle span.active2:after{position: absolute;right: 3px;bottom: -2px;left: 3px;height: 4px;content: '';-webkit-transform: scaleY(.5);transform: scaleY(.5);background-color: #fff;z-index: 9;}
+
+/*门票切换*/
+.bottom-box{position: relative;margin-top: .2rem;}
+.bottom-box:after{position: absolute;right: 0; bottom: 0px; left: .15rem; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #ddd;}
+.bottom-box span{position: relative;width: 45%;height: 38px;line-height: 43px;text-align:center;display: block;float: left;cursor: pointer;color: #d93725;font-weight: normal !important;background: url(../../wap/images/map_smallBg3.png) no-repeat;background-size: 100%;}
+.menuTitle span:first-child{margin-left: 5%;}
+.top-box .active2 .line,.bottom-box .active2 .line{width:100%;display:inline-block;height: 1px;background: #fff;margin:0px;position: absolute; bottom: 0;  left: 0;}
+.resultChange{width: 100%;padding: 0 3%;background: #fff;}
+
+/*日期控件--手机端格式*/
+.calendarInput{margin-top: 15px;padding:0px 5px;width: 65% !important;height:30px;line-height:30px;border-radius:3px;border:1px solid #ccc;cursor:pointer;text-align:center;}
+.resultChange .Time{display: none;position: relative;}
+.resultChange .Time:first-child{display: block;}
+
+/*购物车列表*/
+.cartLists{width: 100%;padding: 0 3%;background: #fff;}
+.cartLists ul{display: inline-block;}
+.cartLists ul li{display: inline-block;width: 100%;}
+.cartLists .contInfo{width: 100%;display: inline-block;margin: .2rem 0;position: relative;}
+.contInfo .titInfo{display: block;float: left;padding-left: .18rem;height: 1rem;position: relative;width: 3.2rem;}
+.titInfo h2,.titInfo em{display: block;width: 100%;width: 3.6rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.priceInfo em{width: auto;}
+.contInfo .priceInfo{display: block;float: right;text-align: right;height: .5rem;line-height: .5rem;}
+.priceInfo b{display: block;}
+.cd-main-content a.ortit_img{width: 1rem;height: 1rem;display: block;float: left;}
+.cd-main-content a.ortit_img img{width: 100%;display: block;}
+.titInfo b{position: absolute;bottom: 0;}
+.titInfo b em{display: inline;}
+/*加入购物车列表*/
+.buttonIcon{width: 100%;display: inline-block;}
+.buttonIcon button{border: 0;width: 100%;border-radius: 3px !important;display: block;float: left;background:#11c0f3;text-align: center;color: #fff;height: .68rem;}
+.buttonIcon .buyRightNow{background:#fcb115;}
+button.addCart{float: right;padding: .05rem 0;background: #11c0f3;color: #fff;border: 0;border-radius: 3px;margin-top: .08rem;width: 1.66rem;}
+/*购物车门票说明*/
+.ticketTips{width: 100%;padding: 0 3%;display: inline-block;background: #fff;padding-top: .3rem}
+.ticketTips ul li{display: block;width: 100%;margin-bottom: .5rem;}
+.ticketTips h1,.ticketTips em{display: block;width: 100%;}
+.resultChange input{width: 4.6rem !important;height: .68rem;line-height: .68rem;font-size: .24rem;color: #333;    text-align: left;    z-index: 9;position: relative;background: none;}
+/*icon*/
+.Time i{top: .33rem; right: .6rem; position: absolute; display: block; z-index: 1;}
+.Time i:before{content: '\e626';font-family: threeSeven !important;font-size: 55px; color: #ddd;}
+/*弹框*/
+.tanbg{-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;display:none;background-color:rgba(78,78,78,.58);position:fixed;_position:absolute;z-index:111112;left:0%;right:0%;top:0%;width:100%;height:100%;opacity:0.58;filter: alpha(opacity=58);-moz-opacity: 0.58;}
+.tan{-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;display:none;width: 4.82rem;position: absolute; text-align: center;background: #fff;padding-top: 2%;margin: 0 auto;height: auto;z-index: 111113;border-radius: 6px}
+.tan h1{font-size: .24rem;width:94%;margin:3%;padding: 3% 2%;line-height: 20px;text-align: left;color: #333;border-bottom: 1px solid #ddd;}
+.tan em{font-size: .24rem;color: #aaa;}
+.tan h1 em{    height: 20px;  line-height: 20px;  float: right;   width: 30px;}
+.tan h1 em:after{content: '\e460';color: #E3E3E3;font-size:40px;font-family: threeSeven !important;}
+.tan span p{color: #666;line-height: .36rem;width: 100%;text-align: left;padding: 0 3%;display: inline-block;}
+.tan span p:last-child{margin-bottom: 0;}
+.tan span p i{display: block;float: left;width: 30%;text-align: right;}
+.tan span p em{display: block;float: right;width: 65%;text-align: left;}
+.tan em.finalPrice{co}
+.tan .okyes{width: 4.82rem;margin: .31rem auto;}
+.okyes a{font-size: .24rem;display: inline-block;width: 43%;color: #fff;margin-top: 1%;margin-bottom: 1%;padding: 4% 0;background: #fcb115;border-radius: 3px;}
+.okyes a:active{background: #fcb115;}
+.okyes a.close{border: 1px solid #fcb115;color: #fcb115;background: none;margin-right: 4%;}
+
+/*带 icon*/
+
+#tan2 h1{font-size: .36rem;text-align: center;position: relative;font-weight: normal;border: 0;padding-left:0.75rem;}
+#tan2 h1:before{content: '\e625';font-family: threeSeven !important;font-size: 70px;color:#fcb115;position: absolute;left: .3rem;top: .08rem;}
+
+
+/*加减框*/
+.mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn]{width: .42rem;height: .42rem;    border-radius: 100%; background: none; border: 1px solid #ddd;}
+.mui-numbox .mui-btn-numbox-minus, .mui-numbox .mui-numbox-btn-minus{border-top-left-radius:inherit;border-bottom-left-radius:inherit;}
+.mui-numbox{position: absolute;  right: 3%;bottom: 0;background: none;height: .42rem;border: 0;border-radius: 100%;overflow: inherit;width: 1.44rem;padding: 0;}
+.mui-numbox .mui-input-numbox, .mui-numbox .mui-numbox-input{border:0 !important;}
+.mui-numbox .mui-btn-numbox-minus{color:#999;}
+.mui-numbox .mui-btn-numbox-plus{background: #00a0d5;color: #fff;}
+.mui-numbox .mui-btn-numbox-plus:active{background: #1bbcf1;}

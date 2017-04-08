@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="37°梦幻海水乐园" />
+		<meta name="keywords" content="37°梦幻海水乐园" />
+		<title>37°梦幻海水乐园</title>
+		<link rel="stylesheet" href="../../wap/style/mui.min.css" /><!--基础样式-->
+		<link rel="stylesheet" href="../../wap/style/header.css" /><!--顶部共用样式-->
+		<link rel="stylesheet" href="../../wap/style/common.css" /><!--一些共用样式-->
+		<link rel="stylesheet" href="../../wap/style/bottom.css" /><!--底部共用样式-->
+		<link rel="stylesheet" href="../../wap/style/fontStyle.css" /><!--字体 颜色样式-->	
+	</head>
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a class="logo"><img src="../../wap/images/logo_index.png" /></a>
+					<a class="mui-icon search login"></a>
+					<a class="mui-icon mui-icon-info-filled mui-pull-right" id="cd-menu-trigger" href="#offCanvasSide"><span></span></a>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<!--主题内容-->
+					<div class="fixed">
+						<div class="cd-main-content">
+							<!--服务热线遮罩层-->	
+							<div class="All_bgGrey" id="fade"></div>
+							<!--未登录弹框-->
+							<div class="static-form" id="tanForm">
+								<span class="dialog-close ClosesBtn"></span>
+								<div class="dialog-skin"></div>
+								<div class="static-form-Cont">	
+									<h1 class="login-tit">密码登录</h1>
+									<div class="field username-field">
+										<label><i class="iconfont" title="会员名"></i></label>
+										<input type="text" name="TPL_username" class="login-text J_UserName" value="" maxlength="32" tabindex="1" placeholder="会员名/邮箱/手机号">
+									</div>
+									<div class="field pwd-field">
+										<label><i class="icon iconfont" title="登录密码"></i></label> 
+										<span id="J_StandardPwd">
+										   <input type="password" name="TPL_password" class="login-text" maxlength="40" tabindex="2" autocomplete="off" placeholder="登录密码">
+										   <button id="timeOut">发送验证码</button>
+										</span> 
+									</div>
+									<div class="dialog-button">
+										<a href="###" class="dia-ok">确定</a>
+										<a href="###" class="dia-no ClosesBtn">取消</a>
+									</div>
+								</div>
+							</div>
+			
+							
+							<button onclick="popupShows('tanForm')" style="position: absolute;left: 50%;">点我</button>
+							
+
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</body>
+	<script src="../../wap/js/jquery-1.11.0.min.js"></script><!--jq包-->
+	<script src="../../wap/js/rem.js"></script><!--全局用-->
+	<script src="../../wap/js/mui.min.js"></script><!--全局用-->
+	<script src="../../wap/js/comUse.js"></script><!--全局用-->
+	<script src="../../wap/js/timeOut.js"></script><!--倒计时-->
+	<script>
+		//获取验证码倒计时          是timeOut（id）可以变换
+		time('timeOut', '获取短信验证码');
+
+		
+	</script>
+</html>

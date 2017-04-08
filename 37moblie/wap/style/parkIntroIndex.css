@@ -1,0 +1,169 @@
+/*园区介绍 背景图*/
+
+.cd-main-content a.parkIndex_tit,.cd-main-content a.parkIndex_tit img{width: 100%;display: block;}
+
+
+/*标题切换*/
+.parkMainCont{display: block;width: 100%;position: relative;z-index: 10;margin-top: -30px;margin-top: -.58rem;}
+.parkMainCont .parkTit{width: 100%;display: inline-block;padding: 0 3%;position: relative;z-index: 9;}
+  
+.parkTit span{width:32%;display: block;float: left;height: .58rem;line-height: .58rem;border-top-left-radius: 10px;border-top-right-radius: 10px;text-align: center;}
+.parkTit span:nth-child(1){background:-webkit-gradient(linear,10% 100%,10% 10%,color-stop(0.15,#f49d00),color-stop(1,#ffc152));}
+.parkTit span:nth-child(2){background:-webkit-gradient(linear,10% 100%,10% 10%,color-stop(0.15,#4c9a0f),color-stop(1,#78c145));margin: 0 2%;}
+.parkTit span:nth-child(3){background:-webkit-gradient(linear,10% 100%,10% 10%,color-stop(0.15,#0069b6),color-stop(1,#00a5e2));}
+ 
+.parkTit .line{background: #f49d00;height:.04rem;width: 100%;position: absolute;left: 0;bottom: 0;}
+.parkTit .line.bg_0{background: #f49d00;}
+.parkTit .line.bg_1{background: #4c9a0f;}
+.parkTit .line.bg_2{background: #0069b6;}
+.parkTit em{position: absolute;left: 16%;}
+.parkTit em:before{content:'\e602';font-size: 15px;color:#f49d00;font-family: threeSeven;}
+em.a:before{content:'\e602';color:#f49e02 !important;}
+em.b:before{content:'\e602';color:#4c9a0f !important;}
+em.c:before{content:'\e602';color:#0069b6 !important;}
+em.d:before{content:'\e602';color:#b60000 !important;}
+
+
+
+/*园区概况*/
+.parkContList{width: 100%;display: block;position: relative;    margin-top: -3px; }
+.parkContList .contList:nth-child(1){display: inline-block;}
+.parkContList .contList{width: 100%;background: #fff;display: none;    text-align: center;}
+.contList a.park_01{margin-bottom: -.6rem;}
+.contList a.park_01,.contList a.park_01 img{width: 100%;display: block;}
+.contList .cont{background:#17b8ee;padding: 0 3% .1rem 3%;border-radius: 3px;width: 94%;position: relative;}
+.contList .cont:after,.contList .project:after{position: absolute;right: 0; bottom: -.3rem; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #e3e3e3;}
+.cont em{width: 100%;margin:.3rem 0 .2rem 0;display: inline-block;text-align:left;}
+/*项目*/
+.contList .project{width: 100%;display: block;padding: 0 3%; margin: .45rem 0 .3rem 0;position: relative;}
+.project b,.project h1,.project em{width: 100%;text-align: left;display: block;}
+.project h1{margin-bottom: .3rem;margin-top: .14rem;}
+
+.parkContList .contList:nth-child(2){height: 392px;overflow: hidden;}
+
+
+
+/*明星图集*/
+
+.jssora05l,
+.jssora05r {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	background: url(../../wap/images/a17.png) no-repeat;
+	overflow: hidden;
+	top:200px;width:65px;height:65px;
+}
+
+.jssora05l {
+	background-position: -19px -50px
+}
+
+.jssora05r {
+	background-position: -116px -50px
+}
+
+.jssora05l:hover {
+	background-position: -139px -50px
+}
+
+.jssora05r:hover {
+	background-position: -180px -50px
+}
+
+.jssora05l.jssora05ldn {
+	background-position: -212px -50px
+}
+
+.jssora05r.jssora05rdn {
+	background-position: -309px -50px
+}
+
+.jssort01 .p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 144px;
+	height: 92px
+}
+
+.jssort01 .t {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none
+}
+
+.jssort01 .w {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.jssort01 .c {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 89px;
+	border: #fff 2px solid;
+	box-sizing: content-box;
+	background: url('../../wap/images/t01.png') -800px -800px no-repeat;
+	_background: none
+}
+
+.jssort01 .pav .c {
+	top: 2px;
+	_top: 0;
+	left: 2px;
+	_left: 0;
+	width: 140px;
+	height: 89px;
+	border: #fff 0 solid;
+	_border: #fff 2px solid;
+	background-position: 50% 50%
+}
+
+.jssort01 .p:hover .c {
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 89px;
+	border: #fff 1px solid;
+	background-position: 50% 50%
+}
+
+.jssort01 .p.pdn .c {
+	background-position: 50% 50%;
+	width: 140px;
+	height: 89px;
+	border: #fff 2px solid
+}
+
+* html .jssort01 .c,
+* html .jssort01 .pdn .c,
+* html .jssort01 .pav .c {
+	width: 144px;
+	height: 92px
+}
+
+
+/*乐园美图*/
+
+.paradiseTit {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 3% 0;
+}
+.parkContList{margin-top: .27rem;}
+.cd-main-content{background: #fff;}
+
+
+
+/*因从小缩略图改为大缩略图  需要强制修改小图顶部距离大图底部距离*/
+.jssort01{bottom: 40px !important;}

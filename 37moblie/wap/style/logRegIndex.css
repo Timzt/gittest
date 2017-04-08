@@ -1,0 +1,99 @@
+.mui-content{background: #fff;}
+.mui-bar:after{position: absolute;right: 0; bottom: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #ddd;}
+.loginReg{margin-top: 1.35rem;}
+/*登录 背景*/
+.loginReg a.login_tit{width: 4.1rem;height:1.04rem;}
+.loginReg a.login_tit img{width: 70%;display: block;margin:1.23rem auto 1.54rem auto ;}
+
+.loginUser{width: 100%;padding: 0 10%;display: block;}
+.loginUser p{width: 100%;text-align: left;display: block;padding: 0 4%;}
+.loginUser p em{float: right;}
+.loginUser p em:after,.changeCont .span b:before,.loginChange .userName b:before{font-family: threeSeven !important;font-size: 30px;}
+.loginUser p em:after { color: #333; content: "\E605"; margin-left: 7px;vertical-align: sub;}
+.loginChange{width: 100%;display: block;}
+.loginChange .span{display: none;margin: .1rem 0;}
+.loginChange .contShow,.loginChange .userName{display: block;}
+
+.changeCont .span,.loginChange .userName{height: .72rem;line-height:.65rem;border: 1px solid #ccc;border-radius: 50px;margin: .1rem 0;position: relative;width: 100%;}
+.changeCont .span input,.loginChange .userName input{border: 0;background: none;margin: 0;padding: 0;line-height: normal;height: auto;padding-left: .31rem;    width: 82%;}
+.changeCont .span b:before,.loginChange .userName b:before{ margin-left:.31rem;vertical-align: sub; margin-left:.31rem;vertical-align: sub;color: #ddd; }
+.loginChange .userName b:before{content: "\E607";}
+.changeCont .span:nth-child(1) b:before{content: "\E606";}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear{border: 0;margin: 0;font-size: 20px; position: absolute; z-index: 1; top: 0px; right: 0; width: 38px; height: .72rem;text-align: center; color: #999; line-height: .72rem}
+
+
+
+
+
+/*登录按钮*/
+.loginUser button.loginIn{width: 100%;background:#fba500;border: 0;border-radius: 50px;height: .72rem;line-height: .3rem;display: block;}
+.loginUser button.loginIn:active{background: #de9303;}
+
+/*忘记密码 立即注册*/
+.userReg .loginChange .span{display: block;}
+.forgotReg{display: block;width: 100%;text-align: center;height: .66rem;line-height: .66rem;display: block;}
+.forgotReg a.forgotPwd:after{content: '';width: 1px;background:#999;display: inline-block;margin: 0 .2rem;height: 13px;}
+/*手机登录*/
+.loginUser p em.phone:after{content: '\e607'}
+.loginChange .changeCont:nth-child(2) .span:nth-child(1) b:before{content: "\E606";}
+.loginChange .changeCont:nth-child(2) .span:nth-child(2) b:before{content: "\E608";}
+.loginChange .changeCont:nth-child(2) .span:nth-child(2) span{right: 1.6rem;}
+.changeCont .span button{position: absolute; top: 4px; right: 3px; border: 0; background: none;}
+.changeCont .span button:before{content: '';width: 1px;background:#999;display: inline-block;margin: 0 .2rem;height: 22px;vertical-align: inherit;}
+.changeCont .span button:active{color: #575757;}
+
+
+/*提示语样式*/
+#info{    width: 100%;  text-align: center; font-size: .24rem;  color: #333; margin-bottom: .1rem; line-height: normal;}
+
+
+
+/*新用户注册单独试用*/
+.userReg{margin-top: 2rem;}
+.userReg p em.phone:after{content: '\e607'}
+.userReg .loginChange .changeCont .span:nth-child(1) b:before{content: "\E605";}
+.userReg .loginChange .changeCont .span:nth-child(2) b:before{content: "\E608";}
+.userReg .loginChange .changeCont .span:nth-child(2) span{right: 1.6rem;}
+.userReg .loginChange .changeCont .span:nth-child(3) b:before{content: "\E606";}
+.userReg .loginChange .changeCont .span:nth-child(4) b:before{content: "\E606";}
+.userReg .changeCont .span button{position: absolute; top: 4px; right: 3px; border: 0; background: none;}
+.userReg .changeCont .span button:before{content: '';width: 1px;background:#999;display: inline-block;margin: 0 .2rem;height: 22px;vertical-align: inherit;}
+.userReg .changeCont .span button:active{color: #575757;}
+
+/*立即注册按钮*/
+.userReg button.regisIn{width: 100%;background:#00a0d5;border: 0;border-radius: 50px;height: .72rem;line-height: .3rem;display: block;    color: #fff;}
+.userReg button.regisIn:active{background: #0081ac;}
+
+
+/*用户协议*/
+.useAgree input[type=checkbox]{display: inline-block;
+    width: 18px;
+    height: 26px;
+    border: 0;
+    outline: 0!important;
+    background-color: transparent;
+    -webkit-appearance: none;vertical-align: bottom;}
+.useAgree input[type=checkbox]:before {
+    content: '\e609';font-family: threeSeven !important;font-size: 30px;color: #d3d3d3;
+}
+.useAgree input[type=checkbox]:checked:before {
+    color: #00a0d5;
+}
+.useAgree input[type=checkbox]:checked:before {
+    content: '\e610';threeSeven !important;font-size: 30px;
+}
+.userReg p.useAgree{margin:.15rem auto .35rem auto;}
+
+
+/*新用户注册 弹框*/
+.tanbg{display:none;background-color:rgba(78,78,78,.58);position:fixed;_position:absolute;z-index:111112;left:0%;right:0%;top:0%;width:100%;height:100%;opacity:0.58;filter: alpha(opacity=58);-moz-opacity: 0.58;}
+.tan{display:none;width: 4.82rem;position: absolute; text-align: center;background: #fff;padding-top: 2%;margin: 0 auto;height: auto;z-index: 111113;border-radius: 6px}
+.tan h1{font-size: .24rem; color: #333;width:94%;margin:0 3% 3% 3%;padding: 3% 2%;line-height: 20px;text-align: left;color: #333;border-bottom: 1px solid #ddd;}
+.tan h1 em{    height: 20px;  line-height: 20px;  float: right;   width: 30px;}
+.tan h1 em:after{content: '\e460';color: #E3E3E3;font-size:40px;font-family: threeSeven !important;}
+.tan span p{font-size: .24rem;color: #666;line-height: .36rem;width: 100%;text-align: left;padding: 0 3%;margin-bottom:.41rem;}
+.tan span p:last-child{margin-bottom: 0;}
+.tan .okyes{width: 4.82rem;margin: .31rem auto;}
+.okyes a{display: inline-block;width: 90%;color: #fff;margin-top: 1%;margin-bottom: 1%;padding: 5% 0;background: #f6a308;border-radius: 3px;}
+.okyes a:active{background: #bc7b01;}

@@ -1,0 +1,28 @@
+/*特色表演轮播图*/
+#tFocus-btn li.active,#tFocus-leftbtn,#tFocus-rightbtn,.gamePrev,.sotfPrev,.gameNext,.sotfNext,.nav_box ul.nav .on a{display:block;background:url(../../wap/images/spr.png) no-repeat;}
+/* link css */
+
+#tFocus{width: 100%;height:276px;background:#fff;overflow:hidden;}
+#tFocus-pic{width: 100%;height:210px;position:relative;}
+#tFocus-pic li{width: 100%;position:absolute;left:0;top:0;filter:alpha(opacity:0);opacity:0;overflow: hidden;display: inline-block;padding: 0 3%; */}
+#tFocusBtn{height:60px;margin: 5px 0 0 7px;z-index:20;overflow:hidden;}
+#tFocus-btn{width: 5rem;height:60px;position:relative;left:0;bottom:0;overflow:hidden;float:left;margin-right:3px;}
+#tFocus-btn ul{width:100000px;position:absolute;left:0;top:0;}
+#tFocus-btn li{height:57px;width: 1.5rem;padding-top:7px;display:block;float:left;margin-right:4px;}
+#tFocus-btn li img{border:2px solid #dddddd;width: 100%;display:block}
+#tFocus-btn li.active{background-position:-448px -100px;}
+#tFocus-btn li.active img{border:2px solid #40b9e5;width: 100%;display:block}
+#tFocus-leftbtn,#tFocus-rightbtn{height: 52px;width: 34px;float:left;text-indent:-9999px;margin-top: 8px;overflow: hidden;}
+#tFocus-leftbtn{background-position: -1px -20px;}
+#tFocus-rightbtn{background-position: -88px -20px;position: absolute;right: 3%;}
+#tFocus-pic li img{width: 100%;display: block;}
+#tFocus-pic li a{position: relative;display: inline-block;width: 100%;}
+#tFocus-pic li a em{position: relative;bottom: 24px;width: 96%;display: block;text-align: left;padding-left: 3%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;left: 0;}
+.speacialCont h1{line-height: .44rem;margin: .44rem 0;width: 100%;  text-align: left;padding: 0 3%;}
+.speacialCont em{line-height: .36rem;    width: 100%;  text-align: left;padding: 0 3%;    display: block;}
+.parkContList .contList:nth-child(2) #pullrefreshMidd{height:300px;padding-bottom: .3rem;position: relative;}
+
+@media screen and (min-width:320px) {
+	#tFocus-btn ul{top: 6px;}
+}
+.mui-table-view:after{background: none !important;}

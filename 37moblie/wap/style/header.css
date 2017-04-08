@@ -1,0 +1,36 @@
+/*顶部蓝色底 头部*/
+.mui-bar{position: fixed;}
+
+.mui-bar .search{position: absolute;right: 11%;}
+.mui-bar .search:before{content: '\e466';font-size: 29px;height: 1rem;line-height: .45rem;}
+.mui-bar .login{right:.88rem;padding-top: 0px !important;top: -.01rem;}
+.mui-bar .login:before {content: '\e591';font-size: 1.5rem;}
+.mui-pull-right span:before{content:'\e563'; color: #00a0d5;font-size: 26px;font-weight: bolder}
+#cd-menu-trigger{padding-top: 0px;}
+.mui-bar .login:before {content: '\e595';color: #00a0d5;}
+
+.mui-bar a.logo{width: 2.2rem;height:50px;display: inline-block;line-height: 60px;}
+.mui-bar a.logo img{width: 100%;margin: .13rem 0;}
+.mui-active #cd-menu-trigger{background:#17b8ee;    margin-right: 0;width: .8rem;}
+.mui-active #cd-menu-trigger span:before{
+	content: '\e460';
+	color: #fff;
+	font-size: 48px;
+	font-weight: normal;
+	line-height: .8rem;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	display: inline-block;
+	position: absolute;
+	right: 0rem;
+	width: .8rem;
+	}
+/*顶部白色色底 头部 调整*/
+.mui-bar-nav.white a:before{color:#00a0d5;}
+
+.mui-bar .hLeft{text-align: center;font-weight: normal;font-size: .3rem;background: none;color: #00a0d5;height: initial; line-height: .8rem;padding: 0; width:100%;position: absolute;left: 0;}

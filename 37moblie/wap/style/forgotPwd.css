@@ -1,0 +1,20 @@
+/*密码管理*/
+.mui-bar-nav~.mui-content {padding-top: .8rem !important;}
+.fixed{margin-top: 0;}
+.mui-content h1{color: #3169B0;font-size: .24rem;display: inline-block;height:.5rem;line-height:.5rem;width: 100%;background-color: #f7f7f7;padding: 0 3%;}
+.mui-content-padded{margin:0 !important; background: #fff;padding: 0 3% .2rem 0;}
+.mui-input-row b{font-family: threeSeven !important;}
+.mui-input-row b.eye:before{content: "\e567";font-weight: normal;color: #666;font-size: 30px;right: 3%;}
+
+.mui-input-row b.agaEye:before{content: "\e568";font-weight: normal;color: #666;font-size: 20px;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{float: left;}
+.mui-input-row label~input{height: .8rem !important;width: 70%;font-size: .24rem;}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{
+ right: 30px;height: 30px;
+}
+/*修改密码*/
+.mui-input-row label~input[type=text]{width:47%}
+.mui-input-row label~input[type=checkbox]{width: 4%;}
+.mui-input-group .mui-input-row:nth-child(2) button#timeOut{width: 1.8rem;margin-top: .05rem;float: right;height: .68rem;line-height: .68rem;color: #fff;background:#bfbfbf;padding: 0;}
+.mui-input-group .mui-input-row:nth-child(2) .mui-icon-clear{right: 1.5rem;}

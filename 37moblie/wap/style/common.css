@@ -1,0 +1,156 @@
+
+*{box-sizing: border-box;-webkit-box-sizing:border-box;}
+body,html{overflow-x: hidden;background: #eee;}
+.mui-input-row label {
+	font-family: '微软雅黑';
+	line-height: 1.1;float: left;width: 15%;padding: 11px 15px}
+html {font-family:'微软雅黑';-webkit-text-size-adjust: 100%}
+code,kbd,pre,samp {font-family:'微软雅黑';font-size: 1em}
+body {	font-family: '微软雅黑';
+	font-size: 17px;line-height: 21px;color: #000;-webkit-overflow-scrolling: touch}
+input,select,textarea {	font-family: '微软雅黑';
+	font-size: 17px;-webkit-tap-highlight-color: transparent;-webkit-tap-highlight-color: transparent}
+
+em,i,s,b,p{font-style: normal;font-weight: normal;}	
+h1, h2, h3, h4, h5, h6,p{margin: 0;}
+ul,li{list-style: none;-webkit-padding-start:0;-webkit-margin-after:0;-webkit-margin-before:0}
+.mui-input-row .mui-btn {font-family: '微软雅黑';
+	line-height: 1.1;float: right;width: 15%;padding: 10px 15px}
+.mui-checkbox input[type=checkbox]:before,
+.mui-radio input[type=radio]:before {
+	font-family: threeSeven;font-size: 28px;
+	font-weight: 400;line-height: 1;
+	text-decoration: none;	color: #aaa;
+	border-radius: 0;background: 0 0;-webkit-font-smoothing: antialiased}
+.mui-select:before {font-family: threeSeven;
+	position: absolute;top: 8px;right: 21px;content: '\e581';color: rgba(170, 170, 170, .6)}
+.mui-search:before {font-family: threeSeven;font-size: 20px;
+	font-weight: 400;position: absolute;top: 50%;
+	right: 50%;	display: none;margin-top: -18px;
+	margin-right: 31px;	content: '\e466'}	
+.mui-navigate-right:after,
+.mui-push-left:after,
+.mui-push-right:after {font-family: threeSeven;
+	font-size: inherit;line-height: 1;
+	position: absolute;top: 50%;display: inline-block;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-decoration: none;color: #bbb;-webkit-font-smoothing: antialiased}		
+.mui-icon {
+	font-family: threeSeven;
+	font-size: 24px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1;
+	display: inline-block;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	height: .8rem;
+	line-height: .8rem;
+}		
+.mui-bar-nav a:before{color: #fff;}	
+.mui-bar{background: #fff;box-shadow: none;}	
+a {
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    outline: none;
+}
+/*提交 共用*/
+.mui-btn-block{padding: 10px 0;width: 94%;margin: 3% auto 0 auto;}
+.mui-btn-blue, .mui-btn-primary, input[type=submit]{background-color: #3169B0;border: 1px solid #F7F7F7;}
+.mui-btn-blue.mui-active:enabled,
+.mui-btn-blue:enabled:active,
+.mui-btn-primary.mui-active:enabled,
+.mui-btn-primary:enabled:active,
+input[type=submit].mui-active:enabled,
+input[type=submit]:enabled:active {
+	color: #fff;
+	border: 1px solid #F7F7F7;
+	background-color: #3379d0
+}
+
+/*底部共用*/
+.bottom{width: 100%;text-align: center;margin-top:3%;background: #0075c0;position: absolute;bottom: -.1rem;z-index: 900 !important;}
+.bottom .bot_Link{width: 100%;margin:0 auto;height: .68rem;line-height: .68rem;position: relative;}
+.bottom .bot_Link:after{position: absolute;right: 0;bottom: 0;left:0px;height: 1px;content: ''; -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: rgba(255,255,255,.2);}
+.bot_Link span:first-child{text-align: right;}
+.bot_Link span:last-child{text-align: left;}
+.bottom span{color: #fff;width: 1.3rem;height:.66rem;display: inline-block;line-height: .66rem;    text-align: left;}
+.bottom span b{float: right;color: #ddd;}
+.bottom p{height: .8rem;display:block;text-transform: uppercase;margin-bottom: .08rem;}
+.bottom p b{display: block;width: 100%;}
+.bottom a.bot_index{width: 237px;height: 1.06rem;display: block;margin: 0 auto;padding-top: .1rem;}
+.bottom a.bot_index img{width: 58%;}
+/*所有页面固定顶部兼容 通用*/
+.cont .speciIntro_cont{width: 100%;padding: 0 3%;}
+.speciIntro_cont span{font-size: .24rem !important;    line-height: 1 !important;width: 100%;}
+.fixed{position: fixed;width: 100%;overflow-y: auto;padding-bottom: 0;padding-top: 0;z-index: 800;height: 100%;}
+.mui-backdrop{top: 0;}
+.mui-backdrop-action.mui-backdrop.mui-active, .mui-bar-backdrop.mui-backdrop.mui-active{z-index: 998 !important;}
+.mui-backdrop{z-index: -1 !important;}
+/*新遮罩层*/
+.mui-off-canvas-left, .mui-off-canvas-right{width: 42%;}
+.mui-scrollbar-vertical{width: 0;}
+
+/*回到顶部*/
+#backdTop{position: fixed;right: 7%;bottom: 18%;display: block;z-index: 9;opacity: 0.8;text-align: right;}
+#backdTop span.img2{width:100%;display: block; background: #fff; border-radius: 100px; height: 47px;}
+#backdTop.hide {
+    display: none !important;
+}
+
+.All_bgGrey{background-color: #000;position: fixed;_position: absolute;z-index:9991;left: 0%;right: 0%; top: 0%;width: 100%;height: 100%;opacity: 0.2;filter: alpha(opacity=20);-moz-opacity: 0.2;display: none;transition: all .3s;-webkit-transition: all .3s;}
+/*未登录弹框*/
+.login-tit{height: 18px;line-height: 18px;font-size: 16px;color: #3c3c3c;margin-top: 9px;margin-bottom: 8px;font-weight: 700;}
+.static-form{position: fixed;width: 5.4rem;display: none;z-index: 9992;}
+.static-form-Cont{width: 5rem;background: #fff;z-index: 9999;position: relative;padding: .4rem .25rem;margin: 13px auto;height: 100%;border: 1px solid #a4a4a4;overflow: hidden;}
+.dialog-skin{background: #fff;opacity: .4;filter: alpha(opacity=40);position: absolute;height: 100%;width: 100%;_padding: 0 20px 0 0;top: 0;left: 0;}
+.static-form .login-text{width: 4.5rem;font-size: .14rem;line-height: .6rem;height: .6rem;padding: .11rem .08rem .11rem .8rem;border: 1px solid #ddd;}
+.field{position: relative;margin-bottom: .25rem;}
+.field label{background:#ddd;display: block;width: .6rem;height: .6rem;line-height: .6rem;text-align: center;position: absolute;outline: 0;}
+.field label i:before{font-family:threeSeven !important;color:#606060;font-size: .3rem;}
+.username-field label i:before{content: '\e130';}
+.username-field label,.pwd-field label{left: 1px; top: 1px;}
+.pwd-field label i:before{content: '\e506';}
+.username-field input:focus,.pwd-field input:focus{border: 2px solid #a6c8ff;}
+#J_StandardPwd input{width: 2.7rem;}
+
+.dialog-close{outline: medium none;position: absolute;z-index: 99999;right: 20px;top: 20px;overflow: hidden;display: block;cursor: pointer;}
+.dialog-close:before{content: '\e404';font-family:threeSeven !important;font-size: .4rem;color:#9a0000;font-weight: bolder;}
+.dialog-close:hover:before{color: #ff0000;}
+.dialog-button a{height: .4rem;line-height: .4rem;text-align: center;color: #fff;font-size: 14px;width: 1.5rem;display: inline-block;border-radius:3px;}
+
+.dialog-button a.dia-ok{background: #ffc152;}
+.dialog-button a.dia-no{background: #f4f4f4;float: right;color:#d9a954;}
+.dialog-button a.dia-ok:hover{background: #d3911a;}
+.dialog-button a.dia-no:hover{background: #ababab;color: #fff;}
+button#timeOut {background: #dddddd;height: .6rem;width: 1.66rem;border-radius: 3px;color: #666;font-size: .14rem;margin: 0px;cursor: pointer;}
+
+
+/*购物车加减*/
+.priceInfo label{display: inline-block;vertical-align: middle;width: 100%;margin-top:0; }
+.priceInfo label input{border:1px solid #ddd;height: auto !important;line-height:inherit;padding:0;margin: 0;display: inline-block;float: left;}
+.priceInfo label input[type=button]{width: 27px;cursor: pointer;}
+.priceInfo label input[type=text]{width: 30px;text-align: center;cursor: pointer;}
+.priceInfo ul li b{float: right;padding-right: 4px;width: 80px;text-align: right;}
+.priceInfo label input[type=button],.cart02 label input[type=text]{color: #747474;font-size: 12px;}
+.priceInfo ul li b{color: #e1853b; font-size: 14px;}
+.wx_numbox .mui_input,.wx_numbox .mui_btn{width: .56rem; padding: 0; margin: 0;text-align: center;line-height: normal;height: 0.55rem;border-radius: 3px;float: left;}
+
+/*底部拨号功能样式*/
+
+a#hotLine{color: #fff !important;font-size: .24rem;}
+a#hotLineIos{color: #007aff !important;}
+.backdrop{ position: fixed;  z-index: 1;  top: 0;  right: 0;   bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);}
+.mui-table-view-cell{padding: 13px 0 !important;}   
+.mui-table-view-cell>a:not(.mui-btn){padding:0 10px 10px 10px !important;}
+.parkTit em{top: 22px;}  
+/*跳转 顶部切换 小三角位置*/ 
+@media screen and (max-width: 422px) and (min-width: 322px){
+.parkTit em {
+    top: .4rem;
+}
+

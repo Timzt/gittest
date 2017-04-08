@@ -1,0 +1,21 @@
+.contactUs{width: 100%;background: #fff;padding-top: .3rem;}
+.contactUs ul{margin-bottom: 2rem;}
+.contactUs ul li{position: relative;display: inline-block;margin-bottom: .4rem;width: 100%;padding: 0 3% .43rem 3%;}
+.contactUs li em{font-size: .28rem;color: #333;}
+.contactUs li em b{font-size: .2rem;vertical-align:text-bottom}
+.contactUs ul li p{font-size: .24rem;color: #999;}
+.contactUs ul li:after {
+    position: absolute;
+    right: .15rem;
+    bottom: 0;
+    left: .15rem;;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.bottom{position: fixed;bottom: 0;}
+.mui-content{background: none;}
+.contactUs ul li:last-child{margin-bottom: 0;}
+.contactUs ul li:last-child:after{right: 0;left: 0;}

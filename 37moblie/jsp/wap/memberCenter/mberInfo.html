@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="37°梦幻海水乐园" />
+		<meta name="keywords" content="37°梦幻海水乐园" />
+		<title>37°梦幻海水乐园</title>
+		<link rel="stylesheet" href="../../../wap/style/mui.min.css" /><!--基础样式-->
+		<link rel="stylesheet" href="../../../wap/style/header.css" /><!--顶部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/common.css" /><!--一些共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/bottom.css" /><!--底部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/fontStyle.css" /><!--字体 颜色样式-->	
+		<link rel="stylesheet" href="../../../wap/style/mberInfo.css" /><!--我的个人资料-->
+		<link rel="stylesheet" href="../../../wap/style/mui.picker.css"/><!--选择城市-->
+		<link rel="stylesheet" href="../../../wap/style/mui.poppicker.css"/><!--选择城市-->
+		<link rel="stylesheet" href="../../../wap/style/mui.picker.min.css"/><!--选择生日用-->
+		<link rel="stylesheet" href="../../../wap/style/fixedChange.css" /><!--调整底部fixed专用-->
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title hLeft">个人资料</h1>
+		</header>
+
+			<!--主题内容-->
+			<div class="fixed">
+				<div class="cd-main-content">
+					<div class="mui-content-padded">	
+						<!--用户姓名-->
+						<div class="mui-input-group">
+							<div class="mui-input-row name">
+								<label>用户名</label>
+								<input type="text" class="mui-input-clear" placeholder="TEST">
+							</div>
+							<div class="mui-input-row">
+								<label>昵称</label>
+								<input type="text" class="mui-input-clear" placeholder="请输入昵称">
+							</div>
+							<div class="mui-input-row listMenu" id='showUserPicker'>
+					            <label class="agen01">性别</label>
+					            <span class="agenType" id="userResult">保密</span>
+					            <input type="hidden" id="userResultSex" />
+					        </div>
+					        <div class="mui-input-row listMenu btn" data-options='{"type":"date","beginYear":2014,"endYear":2016}'>
+					            <label class="agen01">生日</label>
+					            <span class="agenType" id="result">请输入生日</span>
+					            <input type="hidden" id="resultBirthday" />
+					        </div>				
+						</div>	
+						<!--手机-->
+						<div class="mui-input-group">
+							<div class="mui-input-row phone">
+								<label>手机</label>
+								<input type="text" class="mui-input-clear" placeholder="18566669999">
+							</div>
+							<div class="mui-input-row">
+								<label>邮箱</label>
+								<input type="text" class="mui-input-clear" placeholder="请输入昵称">
+							</div>
+					        <div class="mui-input-row listMenu">
+					            <label class="agen01">电话</label>
+					            <input type="text" class="mui-input-clear" placeholder="请输入电话">
+					        </div>				
+						</div>
+						<!--所属地区-->
+						<div class="mui-input-group">
+							<div class="mui-input-row" id='showCityPicker3' >
+								<label>所属地区</label>
+								<span class="agenType" id="cityResult3">请选择地区</span>
+								<input type="hidden" id="cityValue"/>
+							</div>
+							<div class="mui-input-row">
+								<label>详细地址</label>
+								<input type="text" class="mui-input-clear" placeholder="请输入昵称">
+							</div>
+							<div class="mui-input-row">
+					            <label class="agen01">在线QQ</label>
+					            <input type="text" class="mui-input-clear" placeholder="保密">
+					        </div>
+					        <div class="mui-input-row lastAfter">
+					            <label class="agen01">MSN账户</label>
+					            <input type="text" class="mui-input-clear" placeholder="请输入MSN账户">
+					        </div>				
+						</div>
+						<!--确定修改-->
+						<button class="conquireModify">确定修改</button>
+					</div>		
+					<!--底部-->
+					<footer class="bottom">
+						<div class="bot_Link">
+							<span id="specialIntro">首页<b>丨</b></span>
+							<span>订单查询<b>丨</b></span>
+							<span id="walkHyou">客服咨询</span>
+						</div>
+						<a href="###" class="bot_index"><img src="../../../wap/images/bot_index.png"/></a>
+						<p><b>官方热线：4006-416999</b><em>版权所有 37°梦幻海水乐园  鲁ICP备13006774号</em></p>
+					</footer>
+				</div>
+			</div>
+
+		
+	</body>
+	<script src="../../../wap/js/jquery-1.11.0.min.js"></script><!--jq包-->
+	<script src="../../../wap/js/rem.js"></script><!--全局用-->
+	<script src="../../../wap/js/mui.min.js"></script><!--全局用-->
+	<script src="../../../wap/js/comUse.js"></script><!--全局用-->
+	<script src="../../../wap/js/mberInfo.js"></script><!--我的个人资料专用-->
+	<script src="../../../wap/js/mui.picker.js"></script><!--选择性别用-->
+	
+	<script src="../../../wap/js/mui.poppicker.js"></script><!--选择城市用-->
+	<script src="../../../wap/js/city.data-3.js"></script><!--选择城市用-->
+	<script src="../../../wap/js/city.data.js"></script><!--选择城市用-->
+
+	<script src="../../../wap/js/mui.picker.min.js"></script><!--选择生日用-->
+	<script>
+		//启动右滑 返回上一级  首页除外
+		mui.init({
+			swipeBack: true
+		});
+		(function($) {
+			//----------------选择生日
+			$.init();
+				var result = $('#result')[0];
+				var resultBirthday=$('#resultBirthday')[0];
+				var btns = $('.btn');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							result.innerText = rs.text;
+							resultBirthday.value=rs.text;
+							picker.dispose();
+						});
+					}, false);
+				});
+				
+		})(mui);		
+		(function($, doc) {
+				$.init();
+				$.ready(function() {
+					// ----------------选择性别
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: 'man',
+						text: '男'
+					}, {
+						value: 'woman',
+						text: '女'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+					var userResultSex=doc.getElementById('userResultSex');
+					var userResult = doc.getElementById('userResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							userResult.innerText = JSON.stringify(items[0].text).substring(1, items[0].text.length + 1);
+							userResultSex.value=JSON.stringify(items[0].text).substring(1, items[0].text.length + 1);
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					//----------------选择城市
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var provCode = "130000";
+					cityPicker3.pickers[0].setSelectedValue(provCode,0);
+					cityPicker3.pickers[1].setSelectedIndex(5);
+					cityPicker3.pickers[2].setSelectedIndex(5);
+					var showCityPickerButton = doc.getElementById('showCityPicker3');
+					var cityResult3 = doc.getElementById('cityResult3');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							
+							cityResult3.innerText =(items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							cityValue.value=(items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					
+				})
+		})(mui, document);		
+	</script>
+
+</html>

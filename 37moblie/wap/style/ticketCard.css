@@ -1,0 +1,62 @@
+.parkTit em {position: absolute;left: 24%;top: 24px;}
+.parkContList .contList:nth-child(2) {	height: auto;	overflow: initial;}
+
+.ticketSuper,.ticketPrice,.ticketMune{display: block;width: 100%;padding: 0 3%;}
+.ticketSuper h1{height: .9rem;line-height: .9rem;display: block;text-align: left;}
+.ticketSuper em,.ticketPrice h4,.ticketPrice li b{text-align: left;display: block;width: 100%}
+.ticketPrice h4{margin: .49rem 0 .3rem 0;}
+.ticketSuper span{width:4.5rem;height: auto;display: block;margin:0 auto;}
+
+
+.ticketPrice ul{width: 100%;display: block; border: 1px solid #ddd;}
+.ticketPrice ul li{width: 100%;display: block;}
+.ticketPrice ul li:first-child{border-bottom: 1px solid #ddd;}
+.ticketPrice li b{margin-top: .16rem;}
+.ticketPrice li b:before{content: '';width: 3px;background:#febe0e;display: inline-block;height: 14px;vertical-align: -2px;margin-right: .16rem;}
+
+.cardType{width: 100%;padding: 0 3%;height: 1.13rem;display: block;margin: .16rem 0 .29rem 0;}
+.cardType a.ticket_img{width: 1.8rem;height: 1.13rem;display: block;float: left;}
+.cardType a.ticket_img img{width: 100%;display: block;}
+
+.cardType span{display: block;width: 3.3rem;float: left;margin-left: .22rem}
+.cardType em{float: left;margin-left: .22rem}
+.ticketMune ul{margin-top: .36rem;display: block;}
+.ticketMune ul li{width: 100%;display: block;text-align: left;line-height: .38rem;position: relative;padding-left: 6%;}
+.ticketMune li i{display: block;float: left;font-size:35px;color: #17b8ee;position: absolute;top: -10px;left: 0;}
+.ticketMune em{display: block;text-align: left;margin: .4rem 0 0 0;}
+.ticketMune b{display: block;text-align: left;margin-top: .16rem;}
+/*订票按钮*/
+.ticketMune button a.orderTicket{font-size: .3rem;color: #fff;font-weight: normal;padding: .45rem 2rem;}
+.ticketMune button{
+  position: relative;
+  display: block;
+  margin: .5rem auto .8rem auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 0px 9px 0px #3a7faa, 0px 9px 25px rgba(0, 0, 0, 0.7);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  color: white;
+  background-color: #458ecc;
+  border-radius: 8px;
+  border: none;
+  outline: 0 none;
+  width: 90%;
+  height: .8rem;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: .3rem;
+  }
+  
+.ticketMune button.active{  box-shadow:0px 7px 0px #3a7faa, 0px 7px 14px rgba(0, 0, 0, 0.7); transition: all .3s ease-out;  -webkit-transition: all .3s ease-out;  top: 6px;}
+.ticketMune button:active  {  box-shadow:0px 7px 0px #3a7faa, 0px 7px 14px rgba(0, 0, 0, 0.7); transition: all .3s ease-out;  -webkit-transition: all .3s ease-out;  top: 6px;}
+.gradient3{    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#069acc', endColorstr='#17b8ee',GradientType=0 );
+    background: -moz-linear-gradient(top, #17b8ee 0%, #069acc 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#17b8ee), color-stop(50%,#069acc));
+    background: -webkit-linear-gradient(top, #17b8ee 0%,#069acc 50%);
+    background: -o-linear-gradient(top, #17b8ee 0%,#069acc 50%);
+    background: -ms-linear-gradient(top, #17b8ee 0%,#069acc 50%);
+    background: linear-gradient(to bottom, #17b8ee 0%,#069acc 50%);
+}

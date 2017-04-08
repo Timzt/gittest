@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="x-rim-auto-match" content="none">
+		<meta name="description" content="37°梦幻海水乐园" />
+		<meta name="keywords" content="37°梦幻海水乐园" />
+		<title>37°梦幻海水乐园</title>
+		<link rel="stylesheet" href="../../../wap/style/mui.min.css" /><!--基础样式-->
+		<link rel="stylesheet" href="../../../wap/style/header.css" /><!--顶部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/common.css" /><!--一些共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/bottom.css" /><!--底部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/fontStyle.css" /><!--字体 颜色样式-->	
+		<link rel="stylesheet" href="../../../wap/style/parkIntroIndex.css" /><!--园区介绍首页-->		
+		<link rel="stylesheet" href="../../../wap/style/rightSlide.css" /><!--侧边栏-->
+		<link rel="stylesheet" href="../../../wap/style/playEquip.css" /><!--游乐设备专用-->
+		<link rel="stylesheet" href="../../../wap/style/roomInAndOut.css" /><!--室内外专用-->
+		<link rel="stylesheet" href="../../../wap/style/fixedChange.css" />
+	</head>
+	<body>
+		
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			
+			<div class="mui-inner-wrap">
+				
+				<header class="mui-bar mui-bar-nav white">
+						<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+						<h1 class="mui-title hLeft">园区介绍</h1>
+						<a class="mui-icon mui-icon-info-filled mui-pull-right" id="cd-menu-trigger" href="#offCanvasSide"><span></span></a>
+					</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<!--主题内容-->
+					
+					<div class="fixed">
+						
+						<div class="cd-main-content">
+							
+							<!--园区介绍 背景图-->
+							<a href="###" class="parkIndex_tit"><img src="../../../wap/images/parkIndex_tit.jpg"/></a>
+							<!--园区介绍 标题切换-->
+							<div class="parkMainCont">
+								<div class="parkTit">
+									<span>室外乐园<div class="line"></div></span>
+									<span>室内乐园<div class="line"></div></span>
+									<em></em>
+								</div>
+								<div class="parkContList">
+									<div class="contList">
+										<div class="pannel" id="roomOut">			
+											<!--室外-->
+			                                <div class="img-box position-relative">
+			                                    <img class="playEquipImg" src="../../../wap/images/roomOut_img.jpg" alt="游乐设施" border="0" usemap="#imgMap1Map">
+			                                    <div class="map-mark hide-s">
+			                                        <p class="position-relative text-left"><img src="../../../wap/images/yellow.png" class="padding-right icon_mark" alt="">
+			                                            <span class="number vertical_center_h font24 color-fff">3</span></p>
+			                                        <p></p>
+			                                        <map name="imgMap1Map" id="imgMap1Map">
+							                            <area shape="circle" coords="30,75,20,10" title="暴风峡谷" data-src='../../../wap/images/暴风峡谷.jpg' code="184" href="javascript:void(0);">
+							                            <area shape="circle" coords="75,88,20,10" title="深海龙卷风" data-src='../../../wap/images/深海龙卷风.jpg' code="182" href="javascript:void(0);">
+							                            <area shape="circle" coords="265,75,20,10" title="海兽漩涡" data-src='../../../wap/images/海兽漩涡.jpg' code="185" href="javascript:void(0);">
+							                            <area shape="circle" coords="136,65,20,10" title="惊涛骇浪" data-src='../../../wap/images/惊涛骇浪.jpg' code="159" href="javascript:void(0);">
+							                            <area shape="circle" coords="280,88,20,10" title="水上过山车" data-src='../../../wap/images/水上过山车.jpg' code="183" href="javascript:void(0);">
+							                            <area shape="circle" coords="195,138,20,10" title="深海巨蟒" data-src='../../../wap/images/深海巨蟒.jpg' code="161" href="javascript:void(0);">
+							                            <area shape="circle" coords="183,80,15,10" title="冲天回旋" data-src='../../../wap/images/冲天回旋.jpg' code="158" href="javascript:void(0);">
+							                            <area shape="circle" coords="275,143,20,10" title="快乐小海盗" data-src='../../../wap/images/快乐小海盗.jpg' code="186" href="javascript:void(0);">
+							                        </map>
+			                                    </div>
+			                                    <div class="showInfoBox position-relative " code="185">
+						                            <h5 class=" font16" style="color: rgb(255, 255, 255);">水上过山车</h5>
+						                            <p class="text-center"><img src="../../../wap/images/水上过山车.jpg" alt="暴风峡谷"></p><!--默认显示-->
+						                            <p class="a-img-box fa fa-caret-down"></p>
+						                        </div>
+			                             	 </div>
+			                           	</div>										
+									</div>
+									<div class="contList">
+										<div class="pannel" id="roomIn">	
+											<!--室内-->
+			                                <div class="img-box position-relative">
+			                                    <img class="playEquipImg" src="../../../wap/images/roomIn_img.jpg" alt="游乐设施" border="0" usemap="#imgMap2Map">
+			
+			                                    <div class="map-mark hide-s">
+			                                        <p class="position-relative text-left"><img src="../../../wap/images/yellow.png" class="padding-right icon_mark" alt="">
+			                                            <span class="number vertical_center_h font24 color-fff">3</span></p>
+			                                        <p></p>
+			                                        <map name="imgMap2Map" id="imgMap2Map">
+							                           <area shape="circle" coords="240,63,10,10" title="滑板冲浪" data-src='../../../wap/images/滑板冲浪.jpg' code="184" href="javascript:void(0);">
+							                            <area shape="circle" coords="170,53,20,10" title="加勒比海滩" data-src='../../../wap/images/加勒比海滩.jpg' code="182" href="javascript:void(0);">
+							                            <area shape="circle" coords="124,75,20,10" title="秘境漂流" data-src='../../../wap/images/秘境漂流.jpg' code="183" href="javascript:void(0);">
+							                            <area shape="circle" coords="205,133,20,10" title="时空黑洞" data-src='../../../wap/images/时空黑洞.jpg' code="161" href="javascript:void(0);">
+							                            <area shape="circle" coords="30,90,10,10" title="海底穿梭" data-src='../../../wap/images/海底穿梭.jpg' code="158" href="javascript:void(0);">
+							                            <area shape="circle" coords="95,66,20,10" title="欢乐水寨" data-src='../../../wap/images/欢乐水寨.jpg' code="186" href="javascript:void(0);">
+							                        </map>
+			                                    </div>
+			                                    <div class="showInfoBox position-relative " code="185">
+						                            <h5 class=" font16" style="color: rgb(255, 255, 255);">水上过山车</h5>
+						                            <p class="text-center"><img src="../../../wap/images/roomIn_img.jpg" alt="暴风峡谷"></p><!--默认显示-->
+						                            <p class="a-img-box fa fa-caret-down"></p>
+						                        </div>
+			                             	 </div>
+		                           	    </div>
+									</div>
+									
+								</div>
+								<!--乐园美图-->
+								<div class="paradiseTit"> 
+									<h1>乐园美图</h1>
+								</div>
+								<div class="topNav">
+									<div class="pannel " id="ylss">
+		                                <div class="img-box position-relative">
+		                                    <img class="playEquipImg" src="../../../wap/images/playEquip.jpg" alt="游乐设施" border="0" usemap="#Map">
+		
+		                                    <div class="map-mark hide-s">
+		                                        <p class="position-relative text-left"><img src="../../../wap/images/yellow.png" class="padding-right icon_mark" alt="">
+		                                            <span class="number vertical_center_h font24 color-fff">3</span></p>
+		                                        <p></p>
+		                                        <map name="Map" id="Map">
+		                                            <area shape="circle" coords="18,82,15,15" href="javascript:void(0)" title="冲天回旋" data-src='../../../wap/images/冲天回旋.jpg' en="8" class="bgCyellow">
+		                                            <area shape="circle" coords="75,95,10,10" href="javascript:void(0)" title="水上过山车" data-src='../../../wap/images/水上过山车.jpg' en="6" class="bgCyellow">
+		                                            <area shape="circle" coords="35,125,10,10" href="javascript:void(0)" title="深海巨蟒" data-src='../../../wap/images/深海巨蟒.jpg' en="7" class="bgCyellow">
+		                                            <area shape="circle" coords="145,85,20,20" href="javascript:void(0)" title="惊涛骇浪" data-src='../../../wap/images/惊涛骇浪.jpg' en="4" class="bgCyellow">
+		                                            <area shape="circle" coords="140,130,20,20" href="javascript:void(0)" title="深海龙卷风" data-src='../../../wap/images/深海龙卷风.jpg' en="3" class="bgCyellow">
+		                                            <area shape="circle" coords="221,140,20,20" href="javascript:void(0)" title="海兽漩涡" data-src='../../../wap/images/海兽漩涡.jpg' en="5" class="bgCyellow">
+		                                            <area shape="circle" coords="223,96,12,12" href="javascript:void(0)" title="暴风峡谷" data-src='../../../wap/images/暴风峡谷.jpg' en="1" class="bgCyellow">
+		                                            <area shape="circle" coords="207,69,12,12" href="javascript:void(0)" title="快乐小海盗" data-src='../../../wap/images/快乐小海盗.jpg' en="9" class="bgCyellow">
+		                                            <area shape="circle" coords="260,41,10,15" href="javascript:void(0)" title="时空黑洞" data-src='../../../wap/images/时空黑洞.jpg' en="F" class="bgCblue">
+		                                            <area shape="circle" coords="266,49,15,12" href="javascript:void(0)" title="欢乐水寨" data-src='../../../wap/images/欢乐水寨.jpg' en="H" class="bgCblue">
+		                                            <area shape="circle" coords="288,67,18,18" href="javascript:void(0)" title="秘境漂流" data-src='../../../wap/images/秘境漂流.jpg' en="E" class="bgCblue">
+		                                            <area shape="circle" coords="330,55,10,10" href="javascript:void(0)" title="加勒比海滩" data-src='../../../wap/images/加勒比海滩.jpg' en="B" class="bgCblue">
+		                                            <area shape="circle" coords="335,41,12,12" href="javascript:void(0)" title="SPA绿洲" data-src='../../../wap/images/SPA绿洲.jpg' en="C" class="bgCblue">
+		                                            <area shape="circle" coords="345,43,10,10" href="javascript:void(0)" title="宝贝水城" data-src='../../../wap/images/宝贝水城.jpg' en="D" class="bgCblue">
+		                                            <area shape="circle" coords="363,63,10,10" href="javascript:void(0)" title="滑板冲浪" data-src='../../../wap/images/滑板冲浪.jpg' en="A" class="bgCblue">
+		                                            <area shape="circle"  coords="370,108,30,30" href="javascript:void(0)"title="冒险水寨" data-src='../../../wap/images/冒险水寨.jpg' en="2" class="bgCyellow">
+		                                        	<area shape="circle" coords="240,70,15,15" href="javascript:void(0)" title="海底穿梭" data-src='../../../wap/images/海底穿梭.jpg' en="G" class="bgCblue"></map>
+		                                    </div>
+		                                    <div class="showInfoBox position-relative " code="185">
+					                            <h5 class=" font16" style="color: rgb(255, 255, 255);">水上过山车</h5>
+					                            <p class="text-center"><img src="../../../wap/images/水上过山车.jpg" alt="暴风峡谷"></p><!--默认显示-->
+					                            <p class="a-img-box fa fa-caret-down"></p>
+					                        </div>
+		                                    
+		                                </div>
+		                            </div>
+									<div class="indexTips">
+										<div class="playProject">
+											<h1><em>·</em>室内项目</h1>
+											<span class="line"></span>
+											<ul>
+												<li>
+													<a href="###">
+														<em><i>A</i></em>
+														<b>滑板冲浪</b>
+													</a>
+												</li>
+												<li>
+													<a href="###"> 
+														<em><i>B</i></em>
+														<b>加勒比海滩</b>
+													</a>
+												</li>
+												<li>
+													<a href="###">
+														<em><i>C</i></em>
+														<b>SPA绿洲</b>
+													</a>
+												</li>
+												<li>
+													<a href="###">
+														<em><i>D</i></em>
+														<b>宝贝水城</b>
+													</a>
+												</li>
+												<li>
+													<a href="###">
+														<em><i>E</i></em>
+														<b>秘境漂流</b>
+													</a>
+												</li>
+												<li>
+													<a href="###">
+														<em><i>F</i></em>
+														<b>时空黑洞</b>
+													</a>
+												</li>
+												<li>
+													<a href="###">
+														<em><i>G</i></em>
+														<b>海底穿梭</b>
+													</a>
+												</li>
+												<li>
+													<a href="###">
+														<em><i>H</i></em>
+														<b>欢乐水寨</b>
+													</a>
+												</li>
+											</ul>
+										</div>
+										
+										<div class="playProject">
+											<h1><em>·</em>室外项目</h1>
+											<span class="line"></span>
+											<ul>
+												<li>
+													<a href="###">
+														<em><i>1</i></em>
+														<b>暴风峡谷</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>2</i></em>
+														<b>冒险水寨</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>3</i></em>
+														<b>深海龙卷风</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>4</i></em>
+														<b>惊涛骇浪</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>5</i></em>
+														<b>海兽漩涡</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>6</i></em>
+														<b>水上过山车</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>7</i></em>
+														<b>深海巨蟒</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>8</i></em>
+														<b>冲天回旋</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>9</i></em>
+														<b>快乐小海盗</b>
+													</a>	
+												</li>
+												<li>
+													<a href="###">
+														<em><i>10</i></em>
+														<b>宝贝海城</b>
+													</a>	
+												</li>
+											</ul>
+										</div>
+										
+									</div>
+								</div>
+
+							</div>
+							<!--底部-->
+							<footer class="bottom">
+								<div class="bot_Link">
+									<span id="specialIntro">首页<b>丨</b></span>
+									<span>订单查询<b>丨</b></span>
+									<span id="walkHyou">客服咨询</span>
+								</div>
+								<a href="###" class="bot_index"><img src="../../../wap/images/bot_index.png"/></a>
+								<p><b>官方热线<a id="hotLine">4006-416999</a></b><em>版权所有 37°梦幻海水乐园  鲁ICP备13006774号</em></p>
+							</footer>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mui-off-canvas-backdrop" id="offCanvasShow"></div>
+			</div>
+			<!--右侧展开-->
+			<div id="offCanvasSide" class="mui-off-canvas-right">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<nav id="cd-lateral-nav" class="mui-scroll">
+						<a href="###" class="logo_right"><img src="../../../wap/images/logo_right.jpg"/></a>
+						<ul class="cd-navigation">
+							<li class="item-has-children active">
+								<a>首页</a>
+							</li>
+
+							<li class="item-has-children">
+								<a>圆区介绍</a>
+							</li>
+
+							<li class="item-has-children">
+								<a>游玩攻略</a>
+							</li>
+							<li class="item-has-children">
+								<a>活动.演艺</a>
+							</li>
+							<li class="item-has-children">
+								<a>欢乐商城</a>
+							</li>
+							<li class="item-has-children">
+								<a>帮助.交通指南</a>
+							</li>
+						</ul>
+
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="backdrop" id="mui-backdrop" style="opacity: 0;display: none;"></div>
+		<div id="telIos" class="mui-popover mui-popover-action">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a id="hotLineIos">4006-416999</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a id="cancel"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../../../wap/js/jquery-1.11.0.min.js"></script><!--jq包-->
+	<script src="../../../wap/js/rem.js"></script><!--全局用-->
+	<script src="../../../wap/js/mui.min.js"></script><!--全局用-->
+	<script src="../../../wap/js/comUse.js"></script><!--全局用-->
+	<script src="../../../wap/js/pIntroIndex.js"></script><!--室内外标题切换-->
+	<script src="../../../wap/js/hotmap.js"></script>	<!--游乐设备-->
+	<script>
+		//启动右滑 返回上一级  首页除外
+		mui.init({
+			swipeBack: true
+		});
+		window.onload=function(){
+
+			//侧边栏 点击li的时候 添加样式
+			addClass();
+			// 室内外标题切换 标题切换
+			parkTitClick();		
+			//判断安卓以及IOS系统
+			if (mui.os.ios) { 
+				function $(id){
+					return typeof id=== 'string'?document.getElementById(id):id;
+				}
+				var cancel = document.getElementById("cancel");
+				var hotLine = document.getElementById("hotLine");
+				hotLine.addEventListener('tap', function(e) {
+					$(telIos).style.bottom='1.9rem';
+					$(telIos).style.opacity='1';
+					$(telIos).style.display='block';
+					$(muiBbackdrop).style.opacity='1';
+					$(muiBbackdrop).style.display='block';
+				})
+				cancel.addEventListener('tap', function(e) {
+					$(telIos).style.bottom='0';
+					$(telIos).style.opacity='0';
+					$(telIos).style.display='none';
+					$(muiBbackdrop).style.opacity='0';
+					$(muiBbackdrop).style.display='none';
+				})
+			}else if (!mui.os.plus) {
+				//电话号码跳转
+				var hotLine = document.getElementById("hotLine");
+				hotLine.addEventListener('tap', function(e) {
+					window.location.href='tel:4006416999'
+				});
+			}
+			
+		}
+		//右边侧边栏 侧滑START
+		mui.init();
+		//侧滑容器父节点
+		var offCanvasWrapper = mui('#offCanvasWrapper');
+		//主界面容器
+		var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+		//菜单容器
+		var offCanvasSide = document.getElementById("offCanvasSide");
+
+		//移动效果是否为整体移动
+		var moveTogether = false;
+		//侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+		var classList = offCanvasWrapper[0].classList;
+		//变换侧滑动画移动效果；
+		mui('.mui-input-group').on('change', 'input', function() {
+			if(this.checked) {
+				offCanvasSide.classList.remove('mui-transitioning');
+				offCanvasSide.setAttribute('style', '');
+				classList.remove('mui-slide-in');
+				classList.remove('mui-scalable');
+				switch(this.value) {
+					case 'main-move':
+						if(moveTogether) {
+							
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						break;
+					case 'main-move-scalable':
+						if(moveTogether) {
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						classList.add('mui-scalable');
+						break;
+					case 'menu-move':
+						classList.add('mui-slide-in');
+						break;
+					case 'all-move':
+						moveTogether = true;
+						//整体滑动时，侧滑菜单在inner-wrap内
+						offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+						break;
+				}
+				offCanvasWrapper.offCanvas().refresh();
+			}
+		});
+
+		//主界面和侧滑菜单界面均支持区域滚动；
+		mui('#offCanvasSideScroll').scroll();
+		mui('#offCanvasContentScroll').scroll();
+		//实现ios平台原生侧滑关闭页面；
+		if(mui.os.plus && mui.os.ios) {
+			mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+				plus.webview.currentWebview().setStyle({
+					'popGesture': 'none'
+				});
+			});
+		}
+	</script>
+
+</html>
