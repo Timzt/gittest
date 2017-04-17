@@ -1,0 +1,16 @@
+/*大背景 顶部中间内容*/
+.logo_Icon span{font-size: 42px;}
+.top_Nav li a{font-size: 14px;}
+.look_Pre a,.top_Discription p{font-size: 25px;}
+.tit_Num em b,.change_Pro span h1 i{font-size: 64px;}
+.act_Tit span{font-size: 38px;}
+.change_Pro span h1{font-size: 34px;}
+.change_Pro li span p,.city_HotLine span em{font-size: 16px;}
+.change_Pro span h1+p,.change_Pro li span p.price_p,.city_Exibition span a.btn-4a{font-size: 18px;}
+.price_p b{font-size: 24px;}
+.pro_img_list a em,.city_HotLine span a.total{font-size: 12px;}
+.pro_img_list a b{font-size: 16px;font-weight: bold;}
+.city_Exibition h1,.city_Exibition li p{font-size: 16px;}
+.city_Exibition h1 em,.city_HotLine a.button2,.city_HotLine h1{font-size: 30px;}
+.city_Exibition li p em{font-size: 20px;font-weight: bold;width: 610px; overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+.city_Exibition span em{font-size: 20px;}

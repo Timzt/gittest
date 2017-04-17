@@ -1,0 +1,55 @@
+/*成都城市单独调用*/
+.act_Tit{width: 1200px;}
+.act_Tit span{width: 33.33%;}
+
+.change_Pro .pro_img_list{padding: 0;}
+.change_Pro li,.change_Pro li span{height: 535px;}
+/*换购类型1//两个图*/
+.img_style1 .pro_img_list a{width:800px;float: left;margin:0;}
+.img_style1 .pro_img_list a img{width: 800px;}
+.img_style1 p.blod{font-weight: bold;font-size: 27px;}
+.img_style1 p.price_p{font-size: 18px;margin-bottom: 84px;}
+.img_style1 p.price_p b{font-size: 56px;font-family: arial;font-weight: bold;}
+.img_style1 em{font-size: 16px;display: block;color: #fff;}
+/*换购类型2//一个图*/
+.change_Pro .img_style2{height: 415px;overflow: hidden;}
+.change_Pro .img_style2 span{height: 414px;}
+.img_style2 .pro_img_list a{width: 50%;margin: 0 auto;display: inline-block;float: left;padding: 97px 0 104px 0;}
+.img_style2 .pro_img_list a img{width: 93px;margin: 0 auto;display: block;}
+.img_style2 .pro_img_list a:last-child{border-left: 1px solid #ddd;}
+.img_style2 .pro_img_list a:last-child img{width:256px;}
+.img_style2 .pro_img_list a em{margin-top: 13px;}
+.change_Pro .img_style2 p.price_p{color: #fff;font-size: 24px;margin-top:0 ;padding-bottom: 9px;}
+.change_Pro .img_style2 em+p.price_p{margin-top: 25px;}
+.price_p b{color: #ff0000;}
+.price_p s{font-style: normal;font-size: 19px;text-decoration: none;}
+.img_style2 em{color: #fff;font-size: 17px;display: block;}
+/*换购类型3//三个图*/
+.change_Pro .img_style3{height: 421px;}
+.change_Pro .img_style3 span{height: 420px;}
+.img_style3 .pro_img_list{padding: 79px 0 0 79px;}
+.img_style3 .pro_img_list a{margin: 0 auto;display: block;width: 268px;}
+.img_style3 .pro_img_list a img{width: 100%;margin: 0 auto;display: block;}
+.img_style3 .pro_img_list a em{margin-top: 13px;font-size: 17px;}
+.change_Pro .img_style3 p.price_p{font-size: 26px;}
+.img_style3 em{font-size: 20px;color: #fff;display: block;}
+.change_Pro .img_style3 p.price_p{padding: 16px 0;}
+.change_Pro .img_style3 span h1+p{margin-top: 27px;}
+.img_style3 em.kf_phone{margin-top: 46px;font-size: 16px;}
+.img_style3 em.kf_phone+p{color: #FF0000;font-size: 18px;line-height: 30px;}
+.img_style3 p b{font-weight: bold;}
+.change_Pro li h1+em{font-size: 16px;margin-top: 29px;}
+.img_style3 p.s_hg{font-size: 16px;}
+.img_style3 p.s_hg b{font-size: 22px;color: #FF0000;}
+
+/*深圳单独调用*/
+.sz_city .img_style2{height: 346px;}
+.sz_city .img_style2 span{height: 345px;}
+.sz_city .img_style2 p{font-size: 19px;}
+.sz_city .img_style2 p.s_hg b{color: #ff0000;}
+.sz_city .img_style2 p.blod{font-size: 30px;margin: 23px 0 14px 0;}
+.sz_city .img_style2 em{font-size: 16px;}
+.sz_city .img_style3{height: 393px;}
+.sz_city .img_style3 span{height: 393px;}
+.sz_city .img_style3 p.blod{font-size: 22px;font-weight: bold;margin: 5px 0 0px 0;padding-bottom: 6px;}
+.sz_city .img_style3 em.kf_phone+p{margin-top: 4px;}
