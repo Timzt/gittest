@@ -1,0 +1,19 @@
+.mui-content span.topImg{width: 100%;padding: 0 3%;display: inline-block;margin-top: 3%;}
+.mui-content a.tit{width: 5.8rem;height: 3rem;}
+.mui-content a.tit img{width: 100%;}
+.mui-content .walkH_cont{width: 100%}
+.walkH_cont p{width: 100%;padding: 0 3%;color: #333;font-size: .24rem;line-height:.44rem;display: block;font-family: "微软雅黑";}
+
+
+/*专科介绍*/
+.mui-content .topLists{background:#F7F7F7;width: 100%;padding:0 3%;text-align: center;display: inline-block;float: left;}
+.topLists a{width: 49%;/*width: 2.95rem;*/display:block;float: left;border: 1px solid #ddd;height: .52rem;line-height: .52rem;background: #fff;margin-right:1%;/*margin-right: .11rem;*/color:#333;font-size: .24rem;}
+.topLists a:nth-child(2n){margin-right: 0;float: right;}
+.topLists a:nth-child(1),.topLists a:nth-child(2){margin-bottom: .1rem;margin-top: .3rem}
+.topLists a.list_active{border: 1px solid #3169B0;background: #3169B0;color: #fff;}
+.cont{display: inline-block;}
+.mui-content .speciIntro_cont{background: #fff;display: inline-block;margin-top: .3rem;display: none;padding-top: .2rem;}
+.speciIntro_cont span.specialImg{width: 100%;padding:.3rem 3% 0 3%;display: inline-block;}
+.specialImg a.tit{width: 5.8rem;height: 3rem;}
+.specialImg a.tit img{width: 100%;}
+.speciIntro_cont p{width: 100%;padding: 0 3%;color: #333;font-size: .24rem;line-height:.44rem;display: block;font-family: "微软雅黑";}

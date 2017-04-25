@@ -1,0 +1,27 @@
+.submitWaiting .waitTop em:before,.paySucuss em:before{font-family: threeSeven !important;display:block;font-size: 80px;}
+.mui-bar:after{position: absolute;right: 0; bottom: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #ddd;}
+/*订单支付等待*/
+.submitWaiting{background: #fff;}
+.cure_tit{position: relative;}
+.cure_tit h1{color:#888;font-size: 16px;position: absolute;top:-10px;width:90px;background: #fff;display: block;left:46.5%;text-align: center;}
+
+
+.waitTop,.waitBot{width: 100%;display: inline-block;text-align: center;}
+.submitWaiting .waitTop em{width: 1.35rem;height: 1rem;display: block;margin:.6rem auto .53rem auto;text-align: center;}
+.submitWaiting .waitTop em:before{content: '\e442';color: #00a0d5;width: 1.35rem;line-height: 1rem;height: 1rem;}
+.waitTop p{text-align: center;color: #333;margin-bottom: 5px;    width: 65%;  margin: 0 auto;}
+
+.waitBot span{display: block;text-align: center;margin: 0 auto;}
+.waitBot span em{text-align: right;width: 180px;display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;vertical-align: middle;}
+.waitBot span b{width: 160px;text-align: left;display: inline-block;}
+button.conquireChange{width: 94%;height: 46px;text-align: center;line-height: normal;color: #fff;border: 0;background: #11c0f3;display: inline-block;border-radius: 3px;margin:.7rem auto .33rem auto;cursor: pointer;font-size: 18px;}
+
+/*支付完成*/
+
+.paySucuss{width: 100%;text-align: center;display: inline-block;background: #fff;padding: 1.1rem 0;}
+.paySucuss em{width: 1.5rem;height: 1.5rem;display: block;margin:0 auto;text-align: center;}
+.paySucuss em:before{content: '\e624';font-size: 100px;color: #fcb115;width: 1.5rem;height: 1.5rem;line-height: 1.5rem;}
+.backOrder{display: block;float: left;width: 100%;margin: 1rem auto 2.9rem auto;padding: 0 3%;}
+.backOrder a{width: 48.5%;background:#11c0f3;color: #fff;font-size: .24rem;display: block;float: left;margin: 0 auto;height: .7rem;line-height: .7rem;border-radius: 3px;}
+.backOrder a:last-child{margin-left: 3%;}
+.backOrder a:active{opacity: .8;}

@@ -1,0 +1,28 @@
+/*上拉*/
+.pullrefresh{position: relative; z-index: 2; top: 0; bottom: 0; left: 0; overflow: hidden;  width: 100%;display: inline-block;height: 392px;}
+.mui-bar-nav~.mui-content .mui-pull-top-pocket{top: 0;}
+.mui-table-view-cell:after,.mui-table-view:after{left: 3% !important;right: 3% !important;}
+.mui-navigate-right:after, .mui-push-right:after{content: '';}
+.mui-table-view-chevron .mui-table-view-cell,.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn),.mui-table-view-cell>a:not(.mui-btn),.mui-table-view-cell{padding: 0;margin: 0;}
+.mui-table-view a.mui-navigate-right{width: 2.4rem;height: auto;display: block;float: left;overflow: hidden;}
+.mui-table-view a.mui-navigate-right img{width: 100%;display: block;}
+.mui-table-view:before{background: none;}
+#middle li a.mui-navigate-right{width: 100%;height: auto;}
+
+.mui-table-view li{margin: 0 !important;display: block;padding: 3% !important;}
+  
+.mui-table-view .mui-contList-right{display: block;float: left;width: 3.2rem;margin-left: .2rem;position: relative;height: 1.35rem;overflow: hidden;}
+.mui-contList-right h1{line-height: .36rem;}
+.mui-contList-right span{position: absolute;bottom: 0;}
+.mui-contList-right h1,.mui-contList-right span{text-align:left;display: block;}
+@media screen and (max-width: 300px) and (min-width: 322px)
+.parkTit em {
+    top: 22px;
+}
+.mui-pull{bottom: 5px !important;}
+.mui-contList-right h1{    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    -webkit-box-orient: vertical !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;}
+#middle a.mui-navigate-right p{text-align: left;white-space: normal;}

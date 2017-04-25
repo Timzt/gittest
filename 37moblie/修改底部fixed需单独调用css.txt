@@ -1,0 +1,26 @@
+fixedChange.css 以下页面用
+	Index.html
+	parkIntroIndex.html
+	mberInfo.html
+	newUserReg.html
+	logRegIndex.html
+	payFor.html	
+	parkNewsDetail.html
+	playEquipDetail.html
+	roomIAOIndex.html
+	routineMapIndex.html
+	ticketCard.html
+
+fixedChangeBot.css 以下页面用
+	myRemind.html
+	advanceReceipts.html
+	pointReceipts.html
+	rechargeRecorde.html
+	myCenterIndex.html
+	addCard.html
+
+
+
+orderPayFor.html  底部div要比其他页面多上升一个div标签  ******
+
+conquireOrder.html shoppingCart.html 有个结算固定在底部  比较特殊

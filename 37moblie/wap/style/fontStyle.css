@@ -1,0 +1,108 @@
+@font-face {
+	font-family: threeSeven;
+	font-weight: normal;
+	font-style: normal;
+	src: url(../../wap/images/threeSeven.ttf) format('truetype')
+}
+/*全部加粗*//*门票 订票*//*常见问题*//*救助中心*/
+.project h1,.ticketMune b,.listAnswer h1 b,.helpTit h1,.priceInfo b{font-weight: bolder;}
+/*全员不加粗*//*常见问题*//*我的订单*//*订单支付等待*/
+.newsTit h1,.playCont span i b,.ticketPrice h4,.listAnswer h1 li,.mui-table-view li h1,.cure_tit h1,.titInfo h2{font-weight: normal !important;}
+/*//底部*//*首页公告*//*园区介绍 标题切换*//*园区介绍 园区概况内容*//*项目*//*咨询详情页标题*//*咨询详情页 内容*//*咨询详情页 翻页*//*咨询详情页 回到上一级*//*游乐项目详情 内容*/
+/*特色表演轮播图*//*门票订票*//*登录 背景*//*忘记密码 立即注册*//*手机登录*//*新用户注册 按钮*//*用户协议*//*常见问题*//*救助中心*//*联系我们*//*个人中心 余额*//*我的订单*//*我的订单*/
+/*订单详细*//*账户余额*//*充值记录*//*购物车结算*//*确认订单*//*订单-支付方式*//*订单-消费人信息*//*加入购物车列表*//*购物车门票说明*/
+.bottom p b,.bottom span,.advTit em,.advTit span,.advCont li em,.advCont li b,.advCont li span,.parkTit span,.cont em,.project b,
+.project em,.mui-contList-right h1,.mui-contList-right span,.newsTit span,.newsCont em,.newsPageUp span,.mui-btn,.playCont em,
+.playCont span i,.playProject ul li b,.speacialCont em,.ticketSuper em,.ticketPrice h4,.ticketPrice li b,.cardType span,.cardType em,
+.ticketMune ul li,.ticketMune em,.changeCont .span input,.forgotReg a,.changeCont .span button,.userReg button.regisIn,.useAgree,.listAnswer h1 b,
+.listAnswer h1 li,.helpTit span,.contactWays em,.personMoney span,.myOrder span,.myOrder span a,.myOrder li i,.personInfoList li,.mui-table-view li h1
+,.priceInfo em,.orderOperate button,.orderTit span,.orderDetailTit h1,.orderDetailTit span,.orderDetailTit p,.orderDetailCont p,.orderDetailCont button.payfor
+,.orderDetailInfo h1,.remindNum em,.remindNum p,.rechargeRecorde .titInfo em,.titInfo h2 em,.titInfo i,.priceSum p,.priceSum a
+,.conquireOrder h1,.listMenu,.conOrdPayInfor h1,.conOrdPayInfor .mui-input-row label,.conOrdPayInfor .mui-input-row label~input
+,.waitBot span,.titInfo b em,.ticketTips h1,.ticketTips em,.Time em
+{font-size: .24rem;}
+/*//底部*/
+.bottom p em{font-size: .16rem;}
+
+/*//底部*//*园区介绍 标题切换*//*园区介绍 园区概况内容*//*游乐项目详情 内容*//*室内*//*登录按钮*//*新用户注册 按钮*//*联系我们*//*个人中心 昵称*/
+/*个人中心 余额*//*订单详细*/
+.bottom p b,.parkTit span,.cont em,.playCont span i,.playProject em i,.loginUser button.loginIn,
+.userReg button.regisIn.contactWays em,.contactWays b,.contactWays i,.contactWays em,.nameRight h1,.nameRight em,
+.nameRight span,.personMoney span,.orderOperate button,.orderDetailCont button.payfor
+{color: #fff;}
+/*//底部*/
+.bottom p em{color: rgba(255,255,255,.5);}
+
+/*首页分类*//*个人中心 昵称*//*我的订单*/
+.indexKindList li span,.nameRight em,.nameRight span,.titInfo em{font-size: .22rem;}
+/*首页分类*//*首页公告*/
+.indexKindList li span,.mui-contList-right h1{color: #000;}
+/*首页公告*//*园区介绍 园区概况内容*//*咨询详情页标题*/
+.advTit span,.titInfo i,.conOrdPayInfor h1{color:#00a0d5;}
+/*咨询详情页 内容*//*游乐项目详情 内容*//*室内室外项目*//*乐园美图*/ /*门票 订票*//*手机登录*//*常见问题*//*我的订单*//*订单详细*//*账户余额*//*充值记录*/
+/*购物车结算*//*确认订单*/
+.advTit em,.advCont li em,.advCont li span,.project em,.newsTit h1,.newsCont em,.playCont em,.playProject h1,.paradiseTit h1,
+.ticketSuper em,.ticketPrice h4,.cardType span,.cardType em,.loginUser p,.changeCont .span button,.listAnswer h1 b,.myOrder span
+,.personInfoList li,.titInfo h2,.orderTit span,.orderDetailTit h1,.orderDetailTit span,.orderDetailTit p,.orderDetailCont p,.orderDetailInfo p.name em
+,.orderDetailInfo p.phoneNum em,.phone input[type=text],.number input[type=text],.remindNum em,.rechargeRecorde .titInfo em,.mui-table-view li h1 em i
+,.priceSum p,.conquireOrder h1,.waitBot span,.Time em
+{color: #333;}
+/*首页公告*//*咨询详情页标题*//*忘记密码 立即注册*/
+.advCont li b,.mui-contList-right span,.newsTit span,.forgotReg a,.titInfo h2 em,.ticketTips em{color: #999;}
+/*多余行数点点点*/
+.advCont li span{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+/*园区概况 项目*//*室外项目*//*特色表演轮播图*//*门票 订票*/
+.project b,.indexTips .playProject:nth-child(2) h1 em,.indexTips .playProject:nth-child(2) ul li em:before,.speacialCont h1,
+.ticketPrice li b,.cardType em i
+{color: #febe0e;}
+/*园区概况 项目*//*门票 订票*/
+.project h1,.ticketSuper h1,.ticketMune b{color: #17b8ee;}
+/*园区概况 项目*//*咨询详情页标题*//*游乐项目详情 内容*//*特色表演轮播图*//*门票 订票*//*登录按钮*//*联系我们*//*个人中心 昵称*//*订单支付等待*/
+/*加入购物车列表*/
+.project h1,.newsTit h1,.playCont span h1,.speacialCont h1,.ticketSuper h1,.cardType em i,.loginUser button.loginIn,.contactWays i,.nameRight h1,
+.waitTop p i,.titInfo b,.titInfo h2
+{font-size: .3rem;}
+/*咨询详情页 翻页*//*游乐设备*//*用户协议*//*常见问题*//*救助中心*//*加入购物车列表*//*购物车门票说明*/
+.newsPageUp span,.playProject ul li b,.userReg p.useAgreem,.listAnswer h1 li,.helpTit span em
+,.titInfo b em,.ticketTips h1
+{color: #666;}
+/*咨询详情页 翻页*//*游乐项目详情 内容*//*室内室外项目*//*用户协议*/
+.newsPageUp span b,.playCont span h1,.playProject h1 em,.userReg p.useAgree a{color:#00a0d5;}
+/*咨询详情页 回到上一级*/
+.mui-btn{color: #0075c0}
+
+/*室内室外项目*/
+.playProject h1{font-size: .28rem;}
+.playProject h1 em{font-size: 44px;}
+
+/*乐园美图*/    
+.paradiseTit h1{font-size: .35rem;}
+/*门票 订票*/
+.ticketMune ul li,.ticketMune em{color: #888;}
+/*门票 订票*//*联系我们*//*我的订单*//*账户余额*/
+.ticketMune b,.contactWays b,.priceInfo b,.remindNum p{font-size: .36rem;}
+/*登录 背景*/
+.changeCont .span input{color: #ccc;}
+/*救助中心*/
+.helpTit h1{color:#ffb400;font-size: .34rem;}
+/*我的订单*//*我的订单*//*订单详细*//*充值记录*/
+.myOrder span a,.personInfoList li span,.mui-table-view li h1,.titInfo em,.priceInfo em,.orderDetailTit span em
+,.orderDetailCont p em,.titInfo em i,.listMenu{color: #aaa;}
+/*我的订单*/
+.myOrder li i{color: #757575;}
+/*我的订单*//*订单-结算信息-弹框*//*支付成功*//*加入购物车列表*/
+.mui-table-view li h1 em,.tan em.finalPrice,.paySucuss p,.titInfo b,.titInfo h2{color:#11c0f3;}
+/*我的订单*/
+.titInfo h2{font-size: .26rem;}
+/*我的订单*/
+.priceInfo b{color: #056905;}
+.orderTit span.acitve{color: #fcb115;}
+/*订单详细*//*账户余额*//*支付等待*/
+.orderDetailTit p em,.remindNum p,.waitTop p b{color: #ff0000;}
+/*购物车结算*//*确认订单*/
+.priceSum p em,.conquireOrder p em{color: #D93725;}
+/*订单支付等待*/
+.waitTop p i{color:#ff9c00;}
+/*支付成功*/
+.paySucuss p{font-size: .48rem;}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="37°梦幻海水乐园" />
+		<meta name="keywords" content="37°梦幻海水乐园" />
+		<title>37°梦幻海水乐园</title>
+		<link rel="stylesheet" href="../../../wap/style/mui.min.css" /><!--基础样式-->
+		<link rel="stylesheet" href="../../../wap/style/header.css" /><!--顶部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/common.css" /><!--一些共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/bottom.css" /><!--底部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/fontStyle.css" /><!--字体 颜色样式-->		
+		<link rel="stylesheet" href="../../../wap/style/rightSlide.css" /><!--侧边栏-->
+		<link rel="stylesheet" href="../../../wap/style/benefitCard.css" /><!--优惠门票专用-->
+		<link rel="stylesheet" href="../../../wap/style/datepicker.css" /><!--日期控件样式-->
+		<link rel="stylesheet" href="../../../wap/style/fixedChangeBot.css" /><!--日期控件样式-->
+	</head>
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav white">
+						<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+						<h1 class="mui-title hLeft">乐园门票</h1>
+						<a class="mui-icon mui-icon-info-filled mui-pull-right" id="cd-menu-trigger" href="#offCanvasSide"><span></span></a>
+					</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<!--主题内容-->
+					<div class="fixed">
+						<div class="cd-main-content">
+                        	<div class="bottom-box">
+                                <div class="menuTitle">
+                                    <span class="default active2">普通票</span>
+                                    <span class="default">优惠票</span>
+                                </div>
+                                <!--日期内容-->
+                                <div class="resultChange" id="DateTan">	
+                                	<div class="Time">				                                    	
+                                    	<em>出游日期</em>
+										<input type="text" id="calendar" class="calendarInput" name="calendar" readonly="readonly" placeholder="点击选择时间"/>
+										<i></i>
+									</div>
+										
+                                </div> 
+                                <!--加入购物车-->
+                                <div class="cartLists">
+                                	<ul>
+                                		<li>
+                                			<div class="contInfo">
+												<a href="###" class="ortit_img"><img src="../../../wap/images/orderTit_img.jpg"/></a>
+												<div class="titInfo">
+													<h2>白天场成人票</h2>
+													<b><em>￥</em>120</b>
+												</div>	
+												<div class="priceInfo">
+													<p class="wx_numbox">
+				                                        <button class="mui_btn minus" type="button">-</button>
+				                                        <input class="mui_input" type="number" min="0" value="0">
+				                                        <button class="mui_btn mui_btn_plus adds" data-max="200" type="button">+</button>
+				                                    </p>
+												</div>
+												<button class="addCart" id="addCart">加入购物车</button>
+											</div>
+                                		</li>
+                                		<li>
+                                			<div class="contInfo">
+												<a href="###" class="ortit_img"><img src="../../../wap/images/orderTit_img.jpg"/></a>
+												<div class="titInfo">
+													<h2>白天场儿童票</h2>
+													<b><em>￥</em>120</b>
+												</div>		
+												<div class="priceInfo">
+													<p class="wx_numbox">
+				                                        <button class="mui_btn minus"  type="button">-</button>
+				                                        <input class="mui_input" type="number" min="0" value="0">
+				                                        <button class="mui_btn mui_btn_plus adds" data-max="200" type="button">+</button>
+				                                    </p>
+												</div>
+												<button class="addCart" id="addCart">加入购物车</button>
+											</div>
+                                		</li>
+                                	</ul>
+                                	 <!--加入购物车按钮-->
+	                            	<div class="buttonIcon">
+	                            		<button class="buyRightNow" id="buyRightNow">立即购买</button>
+	                            	</div>
+                                </div>	
+								<!--购物车门票说明-->
+                               <div class="ticketTips">
+	                               	<ul>
+	                               		<li>
+	                               			<h1>开园时间： </h1>
+	                               			<em>7月1日至12月31日</em>
+	                               			<em>10:00-20:30</em>
+	                               		</li>
+	                               		<li>
+	                               			<h1>开园时间： </h1>
+	                               			<em>请您凭手机短信取票凭证码和订票手机后四位数至景点售票处或自助取票机进行取票游玩。</em>
+	                               		</li>
+	                               		<li>
+	                               			<h1>门票说明： </h1>
+	                               			<em>1、适用对象：成人及身高1.5米以上儿童。</em>
+	                               			<em>2、免票：1.0米以下儿童（一名购票成人限带一名免票儿童，剧院表演的门票及另有规定的票类不适用）。</em>
+	                               		</li>
+                               		</ul>
+                               </div>
+                          </div>
+                          <!--底部-->
+							<footer class="bottom">
+								<div class="bot_Link">
+									<span id="specialIntro">首页<b>丨</b></span>
+									<span>订单查询<b>丨</b></span>
+									<span id="walkHyou">客服咨询</span>
+								</div>
+								<a href="###" class="bot_index"><img src="../../../wap/images/bot_index.png"/></a>
+								<p><b>官方热线：4006-416999</b><em>版权所有 37°梦幻海水乐园  鲁ICP备13006774号</em></p>
+							</footer>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mui-off-canvas-backdrop" id="offCanvasShow"></div>
+			</div>
+			<!--日期遮罩层-->
+			 <div class="tanbg" id="TimeTan"></div>
+			<!--加入购物车 弹窗-->
+	        <div class="tanbg close" id="tanbg"></div>
+	        <div class="tan" id="tan2">
+	        	<h1>添加购物车成功！</h1>
+	            <div class="okyes">
+	                <a class="close">继续浏览</a>
+	                <a>去购物车</a>
+	            </div>
+	        </div>
+			<!--右侧展开-->
+			<div id="offCanvasSide" class="mui-off-canvas-right">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<nav id="cd-lateral-nav" class="mui-scroll">
+						<a href="###" class="logo_right"><img src="../../../wap/images/logo_right.jpg"/></a>
+						<ul class="cd-navigation">
+							<li class="item-has-children active">
+								<a>首页</a>
+							</li>
+
+							<li class="item-has-children">
+								<a>圆区介绍</a>
+							</li>
+
+							<li class="item-has-children">
+								<a>游玩攻略</a>
+							</li>
+							<li class="item-has-children">
+								<a>活动.演艺</a>
+							</li>
+							<li class="item-has-children">
+								<a>欢乐商城</a>
+							</li>
+							<li class="item-has-children">
+								<a>帮助.交通指南</a>
+							</li>
+						</ul>
+
+					</nav>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+	<script src="../../../wap/js/jquery-1.11.0.min.js"></script><!--jq包-->
+	<script src="../../../wap/js/rem.js"></script><!--全局用-->
+	<script src="../../../wap/js/mui.min.js"></script><!--全局用-->
+
+	<script src="../../../wap/js/comUse.js"></script><!--全局用-->
+	<script src="../../../wap/js/order.js"></script><!--切换门票-->
+	<script src="../../../wap/js/zlDate.js"></script><!--日期控件-->
+	<script>
+		//启动右滑 返回上一级  首页除外
+		mui.init({
+			swipeBack: true
+		});
+		addNum();
+        function addNum() {
+                ///数量加减
+                $(".adds").click(function () {
+                    var bl = $(this).next().children().html();
+                    var bc = $(this).prev().val();
+                    if (parseInt(bc) >= parseInt(bl)) return false;
+                    $(this).prev().val(parseInt($(this).prev().val()) + 1);
+
+                });
+                $(".minus").click(function () {
+                    if ($(this).next().val() != 1) {
+                        $(this).next().val(parseInt($(this).next().val()) - 1);
+                    }
+
+                });
+            }
+		
+		
+		window.onload=function(){
+			//门票类型切换
+			TimeChange('menuTitle');
+			
+			//下单  弹框
+			var addCart=document.getElementById("addCart");
+			addCart.addEventListener('tap',function(){
+				tanxy('tan2');
+
+			})
+			function tanxy(id) {
+				var tan = document.getElementById(id);
+				var tanbg = document.getElementById("tanbg");
+				var clienWidth = document.body.clientWidth;
+				var clienHeight = window.screen.availHeight;
+				
+				tanbg.style.display = "block";
+				tan.style.display = "block";
+				var oTop = tan.offsetTop;
+				var oLeft = tan.offsetLeft;
+				tan.style.top = (clienHeight - tan.offsetHeight) / 2 + 'px';
+				tan.style.left = (clienWidth - tan.offsetWidth) / 2 + 'px';
+			}
+
+			function tanhide(id) {
+				var tan = document.getElementById('tan2');
+				var tanbg = document.getElementById("tanbg");
+				tanbg.style.display = "none";
+				tan.style.display = "none";
+			}
+
+				mui(document).on('tap','.close',function(){
+					tanhide('tan2');
+					tanhide('tanbg');
+				})
+			
+			
+			//日期控件
+
+			var json = [
+    {
+        "Date": "2014-10-10",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-10-11",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-10-12",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-10-13",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-10-14",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-10-15",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-10-16",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-10-17",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-11-15",
+        "Price": "158"
+    },
+    {
+        "Date": "2014-12-15",
+        "Price": "158"
+    },
+    {
+        "Date": "2015-01-15",
+        "Price": "158"
+    },
+    {
+        "Date": "2015-01-15",
+        "Price": "158"
+    },
+    {
+        "Date": "2015-02-15",
+        "Price": "158"
+    },
+    {
+        "Date": "2015-03-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-04-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-05-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-06-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-07-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-08-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-09-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-10-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2015-11-15",
+        "Price": "59"
+    },
+    {
+        "Date": "2017-01-18",
+        "Price": "59"
+    }
+];
+//点击展开日期
+var data=JSON.stringify(json)
+console.log(data)
+console.log(json)
+	var TimeTan=document.getElementById("TimeTan");
+$('#DateTan').click(function(){
+
+	var calendar_choose=document.getElementById("calendar_choose");
+	TimeTan.style.display="block";
+	
+//$.get("date.json",function(data) {			
+	pickerEvent.setPriceArr(json);
+	pickerEvent.Init("calendar");
+//});
+	return false;
+})
+//点日期遮罩层关闭 日期控件
+TimeTan.addEventListener('tap',function(){
+
+	var calendar_choose=document.getElementById("calendar_choose");
+	calendar_choose.style.display="none";
+	this.style.display="none";
+	})
+
+
+
+}
+		
+  
+    
+		//右边侧边栏 侧滑START
+		mui.init();
+		
+		
+	</script>
+
+</html>

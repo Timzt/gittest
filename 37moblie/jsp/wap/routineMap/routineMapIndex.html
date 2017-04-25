@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="37°梦幻海水乐园" />
+		<meta name="keywords" content="37°梦幻海水乐园" />
+		<title>37°梦幻海水乐园</title>
+		<link rel="stylesheet" href="../../../wap/style/mui.min.css" /><!--基础样式-->
+		<link rel="stylesheet" href="../../../wap/style/header.css" /><!--顶部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/common.css" /><!--一些共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/bottom.css" /><!--底部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/fontStyle.css" /><!--字体 颜色样式-->	
+		<link rel="stylesheet" href="../../../wap/style/pullUp.css" /><!--上拉专用-->
+		<link rel="stylesheet" href="../../../wap/style/parkIntroIndex.css" /><!--园区介绍首页-->		
+		<link rel="stylesheet" href="../../../wap/style/rightSlide.css" /><!--侧边栏-->
+		<link rel="stylesheet" href="../../../wap/style/routineMap.css" /><!--地图专用-->
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+		<link rel="stylesheet" href="../../../wap/style/fixedChange.css" />
+	</head>
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav white">
+						<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+						<h1 class="mui-title hLeft">乐园门票</h1>
+						<a class="mui-icon mui-icon-info-filled mui-pull-right" id="cd-menu-trigger" href="#offCanvasSide"><span></span></a>
+					</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<!--主题内容-->
+					<div class="fixed">
+						<div class="cd-main-content">
+							<!--园区介绍 背景图-->
+							<a href="###" class="parkIndex_tit"><img src="../../../wap/images/parkIndex_tit.jpg"/></a>
+							<!--园区介绍 标题切换-->
+							<div class="parkMainCont">
+								<div class="parkTit">
+									<span>交通指南<div class="line"></div></span>
+									<span>常见问题<div class="line"></div></span>
+									<span>救助中心<div class="line"></div></span>
+									<span>联系我们<div class="line"></div></span>
+									<em></em>
+								</div>
+								<div class="parkContList">
+									<div class="contList">
+										<div class="top-box">
+											 <div class="back_img_content" id="baiduMap"></div>
+		                                    <div class="ticketTitle">
+		                                        <span class="active2" id="0">自驾游</span>
+												<span >公交车</span>
+		                                    </div>
+		                                    <div class="search-box">
+		                                        <form>
+		                                            <input type="text" class="prev" required="" value="请输入起点" placeholder="请输入起点">
+		                                            <a href="###" class="changeInnerHTML"><img src="../../../wap/images/routineMap.png"/></a>
+		                                            <input type="text" class=" next" required="" value="37度梦幻海水乐园" placeholder="37度梦幻海水乐园">
+		                                            <button id="submitBtn" data-toggle="tooltip" title="未找到相关数据" type="submit" class="btn tooltip-hide">查询</button>
+		                                        </form>
+		                                        <sapn class="fa fa-caret-up color-e9"></sapn>
+		                                    </div>
+		                                   
+		                                    <div class="routineChange">
+		                                    	<div class="bottom-box">
+				                                    <div class="menuTitle">
+				                                        <span class="default active2">交通指南</span>
+				                                        <span class="default">查询结果</span>
+				                                    </div>
+				                                    <div class="resultChange">		                                    	
+					                                    <div id="sresults" class="result">
+					                                       <div class="menuCont">
+					                                       		<h1>一、自驾游交通指南</h1>
+					                                       		<p>具体地址：山东省烟台市开发区金沙滩度假区（黄河路365号）</p>
+					                                       		<h1>二、附近交通指南</h1>
+					                                       		<p>具体地址：山东省烟台市开发区金沙滩度假区（黄河路365号）</p>
+					                                       		<p>208路 201路 205路 206路 207路 210路 211路 21路 28路</p>
+					                                       		<h1>三、烟台具体站点信息</h1>
+					                                       		<p>1.机场：距离项目26公里，车程约25分钟（推荐路线：乘坐机场大巴2号线至新时代广场站，换乘208路公交至37°梦幻海水乐园站点下车）</p>
+					                                       		<p>2.高铁南站：距离项目33公里，车程约40分钟（推荐路线：乘坐城铁巴士2号线到金东小区站，换乘208路公交至37°梦幻海水乐园站点下车）</p>
+					                                       		<p>3.烟台汽车总站：距离项目21公里，车程约30分钟</p>
+					                                       		<p>4.烟台开发区西站：距离项目8公里，车程约10分钟</p>
+					                                       		<p>5.烟台港国际客运站：距离项目19.8公里，车程约30分钟</p>
+					                                       		<p>6.附近高速：同三高速公路烟台管理处古现收费站/荣乌高速/蓬栖高速公路</p>
+					                                       </div>
+					                                    </div>
+					                                    <div id="results" class="result" style="display: none;">
+					                                      		  暂无查询结果！
+					                                    </div>
+					                                </div> 
+				                                </div>
+		                                    </div>
+		                                </div>
+									</div>
+									<div class="contList">
+										<div class="listAnswer">
+											<ul class="faqlists" id="faqlists">
+												<li class="open">
+													<div class="faqTits"><label><em>1</em></label><span>入园须知</span></div>
+													<div class="faqDetails" style="display: block;">
+														1.园区实行一票制，门票包含所有正常开放的水上游乐项目及表演，园区更衣柜租赁、餐饮、购物等须另行付费。<br> 2.为保证水上乐园的安全、舒适，园区有权要求打开手提包、背包、包裹及其他物品接受安全检查。
+														<br> 3.园区基于安全可以拒绝任何手提包、背包、包裹及其他物品带入园区，并对所有无人看管的物品做出适当的处理。
+														<br> 4.高血压、心脏病、肝炎、沙眼、急性结膜炎、中耳炎、精神病、皮肤病、哮喘病、脊椎及颈椎病、骨折或关节脱位史、癫痫病、酗酒者、孕妇以及被医学上鉴定为不适宜参加激烈运动者谢绝入园。
+														<br> 5.园区内的所有消费都采用储物柜腕带刷卡结算（不使用现金），请预先在园区各充值点进行充值，储物柜租金为20元/个（小柜）、30元/个（大柜），腕带押金为30元/个, 腕带最小充值额100元起充。离园时储物柜腕带在充值中心办理结算退换余款，钥匙牌如有遗失和损坏需赔偿人民币30元。<br> 6.1名成年人可带领1名免票儿童或1名成年人可带两名购票儿童。未成年人请勿单独入园，需成年监护人陪同。
+														<br> 7.身高在1.5以下的儿童以及60岁以上的游客，进入水域必须穿着救生衣游玩并有监护人陪同，并且不能进入深水区，水深1.4米以外，针对高空高速的游泳项目60周岁（含）以上老人不适合参玩游乐设施，高空高速项目对身高和体重也有相应的限制。
+														<br> 8.70周岁以上老人请勿入园。（注：享受优待票的老人，请出示身份证）
+														<br> 9.请遵照为确保您的安全及维持秩序而发出的所有告示及工作人员的指引安排。
+														<br> 10.请游客自行保管好随身携带的物品，贵重物品请寄存到贵重物品寄存处。如有丢失，本园概不负责。
+														<br>
+													</div>
+												</li>
+												<li class="open">
+													<div class="faqTits"><label><em>2</em></label><span>建议携带的物品</span></div>
+													<div class="faqDetails" style="display: block;">
+														1、为保持水质清洁，进入水区前请着泳衣，泳衣、泳圈（直径50公分以内）可自带，救生衣、多人、双人气垫景区免费提供。<br> 2、自备毛巾、拖鞋、装湿衣服的袋子和可以换洗的干净衣服及内衣裤。地面湿滑，大家一定要小心，谨防滑倒.(女生可以选择带防晒霜及沐浴用品）
+														<br>
+													</div>
+												</li>
+												<li class="open">
+													<div class="faqTits"><label><em>3</em></label><span>严禁携带的物品</span></div>
+													<div class="faqDetails" style="display: block;">
+														1、食品、饮料。<br> 2、浮排、冲浪板等直径大于50公分的水上充气泳具。
+														<br> 3、玻璃器皿、滑板车、溜冰鞋及任何有无动力的车辆。
+														<br> 4、宠物及其他动物。
+														<br> 5、彩旗、锣鼓、高音喇叭。
+														<br> 6、烟花、爆竹等易燃爆品，有毒有害物品，管制刀具、枪支及法律规定的危险品。
+														<br> 7、园内很多大型项目比较刺激，为避免不必要的损失请大家不要佩戴项链、手镯、耳钉等首饰。
+														<br>
+													</div>
+												</li>
+												</ul>
+										</div>
+										
+									</div>
+									<div class="contList">
+										<div class="helpTit">
+											<h1>园区医疗</h1>	
+											<span>
+												<em>园区医疗</em>
+												<em>地址：山东省烟台市芝罘区只楚南路7号</em>
+											</span>
+											<span>
+												<em>烟台东海中西医结合医院</em>
+												<em>地址：开发区长江路206号</em>
+											</span>
+										</div>
+										<div class="helpTit">
+											<h1>广播寻人</h1>	
+											<span>
+												<em>水上乐园园区面积较大,请事先约定好您们的集中时间及地点，以免走散。如有走散情况，请联系工作人员至广播室发布寻人广播！</em>
+											</span>
+										</div>
+									</div>
+									<div class="contList">
+										<a href="###" class="contactUs_img"><img src="../../../wap/images/contactUs_img.jpg"/></a>
+										<div class="contactWays">
+											<i>地址</i>
+											<em>山东省烟台市开发区金沙滩度假区（黄河路365号）</em>
+											<i>电话</i>
+											<b>400-6416-999</b>
+											<i>邮箱</i>
+											<em>dreamsea37@sina.com</em>
+											<a><img src="../../../wap/images/codeRight.jpg"/></a>
+											<em>微博</em>
+											<a target="_blank" id="weibo"><img src="../../../wap/images/codeLeft.jpg"/></a>
+											<em>微博</em>											
+										</div>
+									</div>
+	                           	</div>
+									
+							</div>
+							<!--底部-->
+							<footer class="bottom">
+								<div class="bot_Link">
+									<span id="specialIntro">首页<b>丨</b></span>
+									<span>订单查询<b>丨</b></span>
+									<span id="walkHyou">客服咨询</span>
+								</div>
+								<a href="###" class="bot_index"><img src="../../../wap/images/bot_index.png"/></a>
+								<p><b>官方热线：4006-416999</b><em>版权所有 37°梦幻海水乐园  鲁ICP备13006774号</em></p>
+							</footer>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mui-off-canvas-backdrop" id="offCanvasShow"></div>
+			</div>
+			<!--回到顶部-->
+			<div id="backdTop">
+				<span class="img2"><img src="../../../wap/images/backTop.png"/></span>
+			</div>
+			<!--右侧展开-->
+			<div id="offCanvasSide" class="mui-off-canvas-right">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<nav id="cd-lateral-nav" class="mui-scroll">
+						<a href="###" class="logo_right"><img src="../../../wap/images/logo_right.jpg"/></a>
+						<ul class="cd-navigation">
+							<li class="item-has-children active">
+								<a>首页</a>
+							</li>
+
+							<li class="item-has-children">
+								<a>圆区介绍</a>
+							</li>
+
+							<li class="item-has-children">
+								<a>游玩攻略</a>
+							</li>
+							<li class="item-has-children">
+								<a>活动.演艺</a>
+							</li>
+							<li class="item-has-children">
+								<a>欢乐商城</a>
+							</li>
+							<li class="item-has-children">
+								<a>帮助.交通指南</a>
+							</li>
+						</ul>
+
+					</nav>
+				</div>
+			</div>
+			
+
+		</div>
+	</body>
+	<script src="../../../wap/js/jquery-1.11.0.min.js"></script><!--jq包-->
+	<script src="../../../wap/js/rem.js"></script><!--全局用-->
+	<script src="../../../wap/js/mui.min.js"></script><!--全局用-->
+	<script src="../../../wap/js/clamp.js"></script><!--段落省略...-->
+	<script src="../../../wap/js/comUse.js"></script><!--全局用-->
+	<script src="../../../wap/js/pIntroIndex.js"></script><!--园区介绍-->
+	<script src="../../../wap/js/mapNavation.js"></script><!--地图js-->
+	<script src="../../../wap/js/BaiMap.js"></script><!--地图js-->
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gI2hIGXv3Ipp8EWbxzPFGz7Sq3EYo4Ai"></script><!--地图api调用-->
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<script>
+		//启动右滑 返回上一级  首页除外
+		mui.init({
+			swipeBack: true
+		});
+		window.onload=function(){
+			//微博跳转
+			document.getElementById("weibo").addEventListener('tap',function(){
+				window.location.href='http://weibo.com/37sea?refer_flag=1005055013'
+			})
+			GPS.bd_encrypt();
+			//侧边栏 点击li的时候 添加样式
+			addClass();
+			// 园区介绍 标题切换
+			parkTitClick();
+			//地图
+			mapNavation();
+			//结果 切换
+			resultChange('menuTitle');
+				//	 百度地图API功能
+				var map = new BMap.Map("baiduMap");//地图显示区域id  要加宽高
+			    var point = new BMap.Point(121.197905, 37.587861);//让地图 可以全国范围查询
+      		    map.centerAndZoom(point, 11);
+      		    map.addControl(new BMap.NavigationControl());        // 添加平移缩放控件
+				map.addControl(new BMap.ScaleControl());             // 添加比例尺控件
+				map.addControl(new BMap.OverviewMapControl());       //添加缩略地图控件
+				map.disable3DBuilding();
+				
+				var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                '<img src="http://pcsv0.map.bdimg.com/pr/?qt=poiprv&uid=11021b87e0a7f34ec51b75ef&width=323&height=101&quality=80&fovx=200" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                '地址：烟台开发区黄河路365号 <br/>电话：4006416999<br/>标签：主题乐园 旅游景点 水上乐园 游乐园' +
+              '</div>';
+				//创建检索信息窗口对象
+				var searchInfoWindow = null;
+				searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+						title  : "37度梦幻海水乐园",      //标题
+						width  : 290,             //宽度
+						height : 105,              //高度
+						panel  : "panel",         //检索结果面板
+						enableAutoPan : true,     //自动平移
+						searchTypes   :[
+							BMAPLIB_TAB_SEARCH,   //周边检索
+							BMAPLIB_TAB_TO_HERE,  //到这里去
+							BMAPLIB_TAB_FROM_HERE //从这里出发
+						]
+					});
+				var poi =  new BMap.Point(121.1979050000, 37.5878610000 );
+				var marker = new BMap.Marker(poi); //创建marker对象
+				marker.enableDragging(); //marker可拖拽
+				searchInfoWindow.open(marker);
+				map.addOverlay(marker); //在地图中添加marker
+				
+				//常见问题 默认隐藏 点击展开	
+				//-------Start------常见问题点标题显示内容
+				var Accordion = function(el, multiple) {
+					this.el = el || {};
+					this.multiple = multiple || false;
+					var links = this.el.find('.faqTits');
+					links.on('tap', {el: this.el, multiple: this.multiple}, this.dropdown)
+				}
+			
+				Accordion.prototype.dropdown = function(e) {
+					var $el = e.data.el;
+						$this = $(this),
+						$next = $this.next();
+			
+					$next.slideToggle();
+					$this.parent().toggleClass('open');
+					$this.addClass("labClicks");
+					setTimeout(function(){
+						if($this.hasClass("labClicks")){
+							$this.removeClass("labClicks");
+						}
+					},500)
+					if (!e.data.multiple) {
+						$el.find('.faqDetails').not($next).slideUp().parent().removeClass('open');
+					};
+				}	
+			
+				var accordion = new Accordion($('#faqlists'), false);
+				//-------End--------常见问题点标题显示内容
+				
+		}
+		
+  
+    
+		//右边侧边栏 侧滑START
+		mui.init();
+		//侧滑容器父节点
+		var offCanvasWrapper = mui('#offCanvasWrapper');
+		//主界面容器
+		var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+		//菜单容器
+		var offCanvasSide = document.getElementById("offCanvasSide");
+
+		//移动效果是否为整体移动
+		var moveTogether = false;
+		//侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+		var classList = offCanvasWrapper[0].classList;
+		//变换侧滑动画移动效果；
+		mui('.mui-input-group').on('change', 'input', function() {
+			if(this.checked) {
+				offCanvasSide.classList.remove('mui-transitioning');
+				offCanvasSide.setAttribute('style', '');
+				classList.remove('mui-slide-in');
+				classList.remove('mui-scalable');
+				switch(this.value) {
+					case 'main-move':
+						if(moveTogether) {
+							
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						break;
+					case 'main-move-scalable':
+						if(moveTogether) {
+							//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+							offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+						}
+						classList.add('mui-scalable');
+						break;
+					case 'menu-move':
+						classList.add('mui-slide-in');
+						break;
+					case 'all-move':
+						moveTogether = true;
+						//整体滑动时，侧滑菜单在inner-wrap内
+						offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+						break;
+				}
+				offCanvasWrapper.offCanvas().refresh();
+			}
+		});
+
+		//主界面和侧滑菜单界面均支持区域滚动；
+		mui('#offCanvasSideScroll').scroll();
+		mui('#offCanvasContentScroll').scroll();
+		//实现ios平台原生侧滑关闭页面；
+		if(mui.os.plus && mui.os.ios) {
+			mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+				plus.webview.currentWebview().setStyle({
+					'popGesture': 'none'
+				});
+			});
+		}
+		
+	</script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="37°梦幻海水乐园" />
+		<meta name="keywords" content="37°梦幻海水乐园" />
+		<title>37°梦幻海水乐园</title>
+		<link rel="stylesheet" href="../../../wap/style/mui.min.css" /><!--基础样式-->
+		<link rel="stylesheet" href="../../../wap/style/header.css" /><!--顶部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/common.css" /><!--一些共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/bottom.css" /><!--底部共用样式-->
+		<link rel="stylesheet" href="../../../wap/style/fontStyle.css" /><!--字体 颜色样式-->	
+		<link rel="stylesheet" href="../../../wap/style/mberInfo.css" /><!--我的个人资料-->
+
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title hLeft">修改密码</h1>
+		</header>
+
+			<!--主题内容-->
+			<div class="fixed">
+				<div class="cd-main-content">
+					<div class="mui-content-padded">	
+						<!--修改密码-->
+						<div class="mui-input-group">
+							<div class="mui-input-row name">
+								<label>用户名</label>
+								<input type="text" class="mui-input-clear" placeholder="TEST">
+							</div>
+							<div class="mui-input-row">
+								<label>旧密码</label>
+								<input type="password" class="mui-input-clear" placeholder="请输入旧密码">
+								<b class="eye"></b>
+							</div>
+							<div class="mui-input-row">
+								<label>新密码</label>
+								<input type="password" class="mui-input-clear" placeholder="请输入新密码">
+								<b class="eye"></b>
+							</div>
+					        <div class="mui-input-row">
+								<label>确认新密码</label>
+								<input type="password" class="mui-input-clear" placeholder="请再次输入新密码">
+								<b class="eye"></b>
+							</div>			
+						</div>	
+						<!--确定修改-->
+						<button class="conquireModify">确定修改</button>
+					</div>
+					<!--底部-->
+					<footer class="bottom">
+						<div class="bot_Link">
+							<span id="specialIntro">首页<b>丨</b></span>
+							<span>订单查询<b>丨</b></span>
+							<span id="walkHyou">客服咨询</span>
+						</div>
+						<a href="###" class="bot_index"><img src="../../../wap/images/bot_index.png"/></a>
+						<p><b>官方热线：4006-416999</b><em>版权所有 37°梦幻海水乐园  鲁ICP备13006774号</em></p>
+					</footer>
+				</div>
+			</div>
+
+		
+	</body>
+	<script src="../../../wap/js/jquery-1.11.0.min.js"></script><!--jq包-->
+	<script src="../../../wap/js/rem.js"></script><!--全局用-->
+	<script src="../../../wap/js/mui.min.js"></script><!--全局用-->
+	<script src="../../../wap/js/comUse.js"></script><!--全局用-->
+	<script src="../../../wap/js/eye.js"></script><!--个人中心 密码眼睛-->
+	<script>
+		//启动右滑 返回上一级  首页除外
+		mui.init({
+			swipeBack: true
+		});
+		
+	</script>
+
+</html>

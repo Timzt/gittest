@@ -1,0 +1,24 @@
+/*此页面背景色*/
+.cd-main-content{background: #fff;    padding-bottom: 0rem;}
+.cd-main-content:after{position: absolute;right: 0; bottom: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #e3e3e3;}
+/*标题*/
+.cd-main-content .newsTit{width: 100%;display: inline-block;padding: 0 3%;position: relative;}
+.cd-main-content .newsTit:before{position: absolute;right: 0; top: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #e3e3e3;}
+.cd-main-content .newsTit:after{position: absolute;right: .3rem; bottom: 0; left:.3rem; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #e3e3e3;}
+.newsTit h1{padding-top: .24rem;line-height: .44rem;}
+.newsTit span{bottom: .24rem;}
+.newsCont h2 {    font-size: 14px !important; color: #8f8f94 !important; height: .4rem; line-height: .4rem; display: inline-block; width: 100%; text-align: left; font-weight: normal;}
+.newsCont h2,.newsCont h1,.newsCont h3,.newsCont h4,.newsCont h5{font-size: .24rem;color: #333;}
+/*内容*/
+.cd-main-content .newsCont{width: 100%;display: block;padding: 0 3%;}
+.newsCont em{display: block;width: 100%;word-break: break-all;line-height: .36rem;margin: .21rem 0 .28rem 0;}
+.newsCont a.newsDetailImg{width:5.8rem;height: 3.08rem;overflow: hidden;}
+.newsCont a.newsDetailImg img{width: 100%; height: 3.08rem; overflow: hidden; display: block;}
+
+/*翻页*/
+.cd-main-content .newsPageUp{display: block;width: 100%;padding: 0 3%;margin-top: .56rem;}
+.newsPageUp span{display: inline-block;word-break: break-all;width: 100%;}
+.newsPageUp span b{display: block;width: 16%; float: left;}
+.newsPageUp span em{float: right; display: block;width: 84%;}
+/*回到上一级*/
+.mui-btn{padding:0;width: 94%; margin: 3% auto 0 auto;border: 1px solid #0075c0;padding-bottom: .3rem;border-radius: 3px;height: .78rem;line-height: .78rem;}

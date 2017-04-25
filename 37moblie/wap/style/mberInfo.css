@@ -1,0 +1,120 @@
+.mui-bar-nav~.mui-content{padding-top:1rem ;background: #eee;}
+.mui-input-group{background: #fff;}
+.mui-input-group .mui-input-row{padding-left: 3%;}
+.mui-input-group:before{background:none;top: -1px;}
+.mui-bar:after{position: absolute;right: 0; bottom: -1px; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color:#ddd;}
+.mui-input-row label{padding: 11px 15px 11px 0;}
+.mui-content-padded{margin: 0;padding-bottom: 0.2rem;}
+.mui-input-row label~input{width:78%;}
+input[type=text],.mui-input-row label{height: .8rem !important;color: #333;font-size: .3rem;font-size: .24rem;}
+.mui-input-row label{width: 1.3rem; color: #333; padding: 0; height: .8rem;  line-height: .8rem;}
+.mui-input-group:after,.mui-input-group .txtArea:after{background: none;} 
+.txtArea textarea{width: 70% !important;font-size: .24rem;}
+.mui-input-group .txtArea{height: auto;}
+.listMenu{line-height: 40px;}
+.mui-bar-nav~.mui-content{border-bottom: 1px solid #e9e9e9;}
+.listMenu label{float: left;width: 1.3rem;color: #333;font-size:.24rem;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.listMenu span{float: right;;width:78%;color:#bbb;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;display: block;font-size:.24rem;margin: 0;padding:0; border: 0;position: relative;}
+.agenType:after {font-family: threeSeven !important;font-size: 20px;content: "\e581";position: absolute;color: #bbb;right:3%;}
+/*#result:after{content: ""}*/
+.elebotLink{position: relative;}
+.elebotLink label {display: inline-block;color: #333;font-size: .3rem; padding: 5px 0;}
+.elebotLink a:last-child {background: #3169B0 !important;color: #fff;border: 1px solid #3169B0 !important;position: absolute;right: 3%;}
+.elebotLink a {display: inline-block;padding: 5px 10px;text-align: center;border-radius: 6px;font-size: .24rem;}
+.eleSels span {display: block;width: 100%;border-top: 1px solid #eee;padding: 3% 0;color: #a4a4a4;text-align: center;font-size: .24rem;}
+.elebotLink {width:100%;background: #eee;padding: 2% 3%;text-align: center;display: block;box-shadow: 0 -5px 7px 0 rgba(0,0,0,.1);}
+#cityResult3{color: #bbb;font-size: .24rem;}
+.mui-poppicker-btn-ok,.mui-btn-blue{color: #fff;}
+.mui-backdrop{z-index: 998 !important;}
+.mui-input-group .mui-input-row:after{left: 15px;}
+.mui-input-group .mui-input-row.lastAfter:after{left: 0;}
+/*输入字之后 出现的 清除 内容按钮*/
+.mui-input-row .mui-input-clear~.mui-icon-clear{top: 0;    height: .8rem !important;    line-height: .8rem !important;}
+
+/*选中状态*/
+.eleSels span.eleSelsCurs{background:#fff;}
+.eleSels .eleSelsCurs, .eleSels .eleSelsCurs:hover {
+    color: #3169B0;
+}
+
+.fadeInUp2 {
+    -webkit-animation-name: fadeInUp2 !important;
+    animation-name: fadeInUp2 !important;
+    display: block;
+}
+.All_bgGrey {
+
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both !important;
+    -webkit-animation-iteration-count: 1;
+    animation-duration: .2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both !important;
+    animation-iteration-count: 1;
+     background-color: #000;
+    position: fixed;
+    _position: absolute;z-index: 99;left: 0%;right: 0%;top: 0%;width: 100%;height: 100%;opacity: 0.3;filter: alpha(opacity=50); -moz-opacity: 0.3;display: none;
+}
+.eleBotpop {width: 100%;background: #ddd;position: fixed;bottom: 0;left: 0;z-index: 999;display: none;-webkit-animation-duration: .2s; -webkit-animation-delay: .1s;-webkit-animation-timing-function: ease;-webkit-animation-fill-mode: both !important;-webkit-animation-iteration-count: 1;animation-duration: .2s; animation-delay: .1s;animation-timing-function: ease;animation-fill-mode: both !important;animation-iteration-count: 1;}
+.fadeInUp{
+		-webkit-animation-name:fadeInUp !important;
+		animation-name:fadeInUp !important;display:block;
+	}
+	@-webkit-keyframes fadeInUp{
+		0%{opacity:0;-webkit-transform:translateY(80px)}
+		100%{opacity:1;-webkit-transform:translateY(0)}
+	}
+	@keyframes fadeInUp{
+		0%{opacity:0;transform:translateY(80px)}
+		100%{opacity:1;transform:translateY(0)}
+	}
+	
+	.fadeInUp2{
+		-webkit-animation-name:fadeInUp2 !important;
+		animation-name:fadeInUp2 !important;display:block;
+	}
+	@-webkit-keyframes fadeInUp2{
+		0%{opacity:0;-webkit-transform:translateY(80px)}
+		100%{opacity:.3;-webkit-transform:translateY(0)}
+	}
+	@keyframes fadeInUp2{
+		0%{opacity:0;transform:translateY(80px)}
+		100%{opacity:.3;transform:translateY(0)}
+	}
+::-webkit-input-placeholder{ /* WebKit browsers */
+    color:#bbb;font-size: .24rem;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#bbb;font-size: .24rem;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#bbb;font-size: .24rem;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#bbb;font-size: .24rem;
+}
+.phone input[type=text]::-webkit-input-placeholder{ /* WebKit browsers */
+    color:#333;font-size: .24rem;
+}
+.name input[type=text]::-webkit-input-placeholder{ /* WebKit browsers */
+    color:#333;font-size: .24rem;
+}
+.fixed{    position: initial; z-index: 8; margin-top: .8rem;}
+.bottom{position: fixed;}
+
+/*确定修改*/
+button.conquireModify{border: 0;background: #11c0f3;color: #fff;font-size: .3rem;width:94%;margin: .2rem auto 0 auto;display: block;height: .8rem;line-height: .8rem;padding: 0;}
+
+/*密码管理*/
+.mui-content h1{color: #3169B0;font-size: .24rem;display: inline-block;height:.5rem;line-height:.5rem;width: 100%;background-color: #f7f7f7;padding: 0 3%;}
+.mui-content-padded{margin-top:.16rem !important; background: #fff;padding-right: 3%;}
+.mui-input-row b{font-family: threeSeven !important;}
+.mui-input-row b.eye:before{content: "\e567";font-weight: normal;color: #666;font-size: 30px;right: 3%;}
+
+.mui-input-row b.agaEye:before{content: "\e568";font-weight: normal;color: #666;font-size: 20px;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{float: left;}
+.mui-input-row label~input{height: .8rem !important;width: 70%;font-size: .24rem;}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{
+ right: 30px;height: 30px;
+}

@@ -1,0 +1,59 @@
+.nameRight span:before,.myOrder span em:before,.myOrder span a:after,.myOrder ul li em:before,.personInfoList li em:before{font-family: threeSeven !important;vertical-align: sub;position: absolute;font-size:.42rem;}
+
+.myPhoto{width: 100%;display: block;background:-webkit-gradient(linear,20% 100%,10% 10%,color-stop(0.1,#005bab),color-stop(1,#00b5ec));}
+
+
+
+.nickName{width: 100%;padding: 0 3%;display: inline-block;margin: .71rem 0 .6rem 0;}
+.nickName a.personPhoto{width:1.1rem;height:1.1rem;display: block;position: relative;background: rgba(255,255,255,.5);border-radius: 100px;float: left;}
+.nickName a.personPhoto img{width: 1rem;height: 1rem;display: block;position: absolute;border-radius: 100px;    top: 3px;  left: 3px}
+
+/*个人中心 昵称*/
+.nameRight{float:left;display: block;width: 4.1rem;margin:.1rem 0 0 .21rem;}
+.nameRight h1{}
+.nameRight span{background:#f7b100;border-radius: 100px;width: 1.59rem;height: .4rem;line-height: .4rem;display: inline-block;text-align: right;position: relative;padding-right: .18rem;margin-top: .21rem;}
+.nameRight span:before{content: '\e611';font-size:.42rem;color: #fff;left: .14rem;}
+
+/*个人中心 余额*/
+.personMoney{display: block;width: 100%;padding: 0 3%;position: relative;height: .78rem;line-height: .78rem;}
+.personMoney:before{position: absolute;right: 0; top: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color:rgba(255,255,255,.1);}
+.personMoney span:first-child{position: relative;}
+.personMoney span:first-child:after{content: '';width: 1px;height:.34rem;background: rgba(255,255,255,.1);display: inline-block;position: absolute;top:.22rem;right: 0;}
+.personMoney span{width: 50%;display: block;float: left;text-align: center;}
+
+/*我的订单*/
+.myOrder{width: 100%;display: inline-block;background: #fff;margin-top: .16rem;}
+.myOrder span{height: .8rem;line-height: .8rem;display: block;width: 100%;padding: 0 3%;position: relative;}
+.myOrder span:after{position: absolute;right: 0; bottom: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color:#eee;}
+.myOrder span em:before{content: '\e612';color: #1296db;left: 0;font-size: .5rem;top: -2px;}
+.myOrder span em{width: 1.76rem;display: block;float: left;text-align: center;position: relative;}
+.myOrder span a{float: right;display: block;width: 1.76rem;text-align: center;position: relative;}
+.myOrder span a:after{content: '\e583';color: #aaa;right: 0;top: 0px;font-size: .24rem;}
+.myOrder ul li{width: 25%;display: block;float: left;text-align: center;margin: .3rem 0;} 
+.myOrder ul li em:before{color: #757575;font-size: 1rem;position: initial;display: block;width: 100%;margin-bottom: .15rem;}
+.myOrder ul li:nth-child(1) em:before{content: '\e621';}
+.myOrder ul li:nth-child(2) em:before{content: '\e613';}
+.myOrder ul li:nth-child(3) em:before{content: '\e614';}
+.myOrder ul li:nth-child(4) em:before{content: '\e622';font-size: .5rem;}
+.myOrder ul li:nth-child(5) em:before{content: '\e627';font-size: .6rem;}
+.myOrder ul li:nth-child(6) em:before{content: '\e628';font-size: .6rem;}
+
+@media only screen and (min-width: 768px) {
+	.myOrder ul li em:before{margin-bottom: .35rem;}
+}
+
+/*账户余额*/
+.personInfoList{margin-top: .16rem;display: block;width: 100%}
+.personInfoList li span{background:none;padding: 0;right: 0 !important;top: .18rem !important;}
+.personInfoList li a.mui-navigate-right{padding-left: .5rem !important;width: 100%;}
+.personInfoList li em:before{left: 0;font-size: .8rem;top: -.08rem;}
+.personInfoList li em.icon1:before{content: '\e615';color:#eb4533;}
+.personInfoList li em.icon2:before{content: '\e616';color:#f9bb00;}
+.personInfoList li em.icon3:before{content: '\e617';color:#72bb2a;}
+.personInfoList li em.icon4:before{content: '\e618';color:#8abda4;}
+.personInfoList li em.icon5:before{content: '\e619';color:#0093d7;}
+.personInfoList li em.icon6:before{content: '\e620';color:#4264e2;}
+.mui-table-view-cell:after,.mui-table-view:before{    background-color: #eee !important;}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{color: #aaa !important;}
+.fixed{padding-bottom: 0 !important;}
+.mui-table-view-cell>a:not(.mui-btn){margin-bottom: .03rem !important;}

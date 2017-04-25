@@ -1,0 +1,47 @@
+.mui-bar:after,.remindNum:after,.listMenu:after{position: absolute;right: 0; bottom: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #ddd;}
+.remindNum:before,.listMenu:before{position: absolute;right: 0; top: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color: #ddd;}
+/*账户余额*/
+.remindNum{background: #fff;display: block;width: 100%;padding: .8rem 0;text-align: center;margin-top: .16rem;position: relative;}
+.remindNum em{display: block;margin-bottom: .36rem;}
+
+.cd-main-content .mui-table-view{margin-top: .16rem;color: #333;font-size: .24rem;}
+.mui-table-view-cell,.mui-table-view-cell>a:not(.mui-btn){padding: 0;margin: 0;}
+.mui-table-view-cell{height: .8rem;line-height: .8rem;padding: 0 3%;}
+.mui-navigate-right:after, .mui-push-right:after{right: 0;}
+
+/*确认充值页面*/
+.listMenu{line-height: 40px;}
+.mui-input-row{height: .8rem;line-height: .8rem;    padding: 0 3%;background: #fff !important;}
+.mui-bar-nav~.mui-content{border-bottom: 1px solid #e9e9e9;}
+.listMenu label,.mui-input-row label{;padding: 0;float: left;width: 1.3rem;color: #333;font-size:.24rem;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.listMenu span{float: right;width: 78%;color:#bbb;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;display: block;font-size:.24rem;margin: 0;padding:0;border: 0;position: relative;}
+.agenType:after {font-family: threeSeven !important;font-size: 20px;content: "\e581";position: absolute;color: #bbb;right:3%;}
+.mui-input-row label~input{font-size: .24rem;width: 78%;height: .8rem;line-height: .8rem;}
+.mui-input-row label{line-height: inherit;}
+.mui-poppicker-btn-ok, .mui-btn-blue{color: #fff;}
+.mui-backdrop{z-index: 99 !important;}
+.listMenu:before{left: .15rem;}
+
+/*确定充值*/
+button.conquireRecharge{border: 0;background: #11c0f3;color: #fff;font-size: .3rem;width:94%;margin: .2rem auto 0 auto;display: block;height: .8rem;line-height: .8rem;padding: 0;}
+
+/*充值记录*/
+.mui-table-view-chevron .mui-table-view-cell{display: block;padding:0 0;width: 100%;margin-top: .2rem;background: #fff;padding-bottom: .2rem;}
+.mui-scroll-wrapper{top:0;padding-bottom: 0rem;}
+.mui-table-view li h1{height: .58rem;line-height: .58rem;display: block;width: 100%;position: relative;padding: 0 3%;}
+.mui-table-view li h1:after{position: absolute;right: 0; bottom: 0; left: 0; height: 1px; content: ''; -webkit-transform: scaleY(.5); transform: scaleY(.5); background-color:#eee;}
+.mui-table-view li h1 em{float: right;}
+.listsCont .contInfo{width: 100%;display: inline-block;margin: .2rem 0;padding: 0 3%;}
+.titInfo em{display: block;line-height: normal;height: .45rem;line-height: .45rem;}
+.titInfo em i{padding-left: .42rem;display: inline-block;}
+.listsCont .mui-table-view-cell{height: auto;line-height: inherit;}
+.cd-main-content .rechargeRecorde .mui-table-view{background: none;}
+.rechargeRecorde .mui-table-view-chevron .mui-table-view-cell{margin-top: .1rem;padding-bottom: 0;}
+.mui-pull { bottom: 0;}
+.mui-bar-nav~.mui-content .mui-pull-top-pocket{top: 0;}
+
+/*收支明细*/
+.receipts .mui-table-view li h1:after{background: none;}
+.receipts .mui-table-view-cell:after{left: 0;}
+.receipts .mui-table-view-chevron .mui-table-view-cell{padding-bottom: .1rem;margin: 0;}
+.receipts .listsCont .contInfo{margin: 0;}

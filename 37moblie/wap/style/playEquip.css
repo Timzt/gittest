@@ -1,0 +1,93 @@
+.parkContList .contList:nth-child(3){padding-top: 0rem;}
+.topNav img.playEquipImg{width:100%;display: block;margin: 0 auto;position: relative;}
+
+
+
+
+
+
+/*项目列表*/
+.pannel {position: relative;}
+/*鼠标经过 游乐项目icon  索引 地图icon*/
+.leftHover li.changeIndex em:before{color: #42fdf6 !important;}
+.rightHover li.changeIndex em:before{color: #ffef67 !important;}
+
+
+
+/*热点地图*/
+.position-relative{position: relative;color: #fff;font-family: "微软雅黑";}
+.vertical_center{position: absolute;top:50%;transform: translateY(-50%);-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);}
+.vertical_center_h{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);}
+.map-mark{position: absolute;top:30px;left: 40px;padding-left: 10px;background-color: transparent;width: 200px;cursor: pointer;}
+.map-mark p{display: inline-block;z-index: 2}
+.map-mark img{width: 50px!important;cursor: pointer;}
+.map-mark .text{position: absolute;left: 35px;top: 0px;bottom: 5px;z-index: 1;padding: 0 30px;line-height: 50px;text-align: center;border-radius: 10px;border-top-left-radius: 0;}
+.map-mark .number{left: 24px;top: 47%;}
+.bgCblue {
+    background-color: #17b8ee!important;
+}
+area{outline: none !important;}
+.bgCyellow {
+    background-color: #febe0e!important;
+}
+
+.showInfoBox{width: 100px;position: absolute;top: 0;left:0;padding:3px 0 10px 0;background-color: #17b8ee;display: none;    z-index: 999;}
+.showInfoBox .btn_plus{width: 24px;height: 24px; position: absolute; top: 100px; border-radius: 500px;background-color: transparent;text-align: center;line-height: 22px;padding: 0;top:12px;right: 10px;}
+.showInfoBox h5{width: 90px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: .24rem !important;margin-left: .2rem;}
+.showInfoBox .btn_plus:hover{cursor: pointer}
+.showInfoBox img{padding-top: 10px;}
+.showInfoBox p.text-center{overflow: hidden;  width: 70px; display: block;  margin: 0 auto;height: 57px;}
+.showInfoBox p.text-center img{width: 100%;display: block; width:70px;height: 57px;overflow: hidden;}
+.showInfoBox .fa-caret-down{position: absolute;left: 17px;top: 60px;bottom: -32px;color:#17b8ee;font-size: 50px;text-align: center }
+.fa-plus:before {
+    content: "\E604";font-family: threeSeven !important; color: #fff;font-size: 30px;
+}
+.fa-caret-down:before {
+    content: "\E602";font-family: threeSeven !important;font-size: 12px;
+}
+.fa-plus:hover:before{color:#f8be1f;}
+
+/*默认隐藏*/
+.hide-s {    display: none;}
+
+.img-box a.playEquipImg{width: 100%;display: block;}
+.img-box a.playEquipImg img{width: 100%;display: block;}
+
+
+/*室内室外项目*/
+/*室内*/
+.indexTips,.indexTips .playProject{display: block;width: 100%;}
+.playProject h1{height: .71rem;line-height: .71rem;display: block;width: 100%;text-align: left;padding: 0 3%;}
+.playProject h1 em{height: .71rem; line-height: .6rem; vertical-align: top;}
+.playProject span.line{background: #00a0d5;height: 1px;width: 10%;display: block;margin-left: 3%}
+.playProject ul{text-align: left;padding-left: 3%;margin-top: .3rem;}
+.playProject ul li{text-align: left;width: 30%;display: inline-block;margin-bottom: .3rem;}
+.playProject ul li em:before{content: "\e603"; font-size: 50px;font-family: threeSeven !important;color: #17b8ee;    vertical-align: middle;}
+.playProject ul li em{position: relative;}
+.playProject em i{position: absolute;top:4px;right: 0; width: 31px;text-align: center;}
+.indexTips .playProject:nth-child(2) span.line{background: #febe0e;}
+
+/*页面一加载 活跃元素*/
+.playActive h1 em:before{
+	animation-duration: scaleEm;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;}
+    
+@-moz-keyframes scaleEm{
+	0%{-webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);}
+	30% ,60%, 70%{-webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);}
+    100%{-webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);}
+}    

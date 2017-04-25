@@ -1,0 +1,6 @@
+.cd-main-content{background: #fff;border-top: 1px solid #eee;    height: 93%;}
+.cd-main-content .consultSer{width: 100%;display: inline-block;top: 21%;text-align: center;position: absolute;}
+.consultSer a.consultService{width: 2rem;height: 2rem;display: block;margin: 0 auto;}
+.consultSer a.consultService img{width: 100%;display: block;}
+.consultSer em,.consultSer b{color: #0d9af3;display: block;font-size: .3rem;margin-top: .3rem;}
+.consultSer b{font-size: .4rem;font-weight: bolder;}
