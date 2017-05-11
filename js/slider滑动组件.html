@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>移动端slider滑动插件-jq22.com</title>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+* {
+	margin:0;
+	padding:0;
+}
+</style>
+</head>
+<body>
+<div class='toggle'>
+    <ul class='slip'></ul>
+</div>
+请在移动端查看效果，pc端无法拖动<script>
+ var toggle = {
+     startScroll: 0, //手指触屏时的坐标
+     endScroll: 0, //手指离开时坐标
+     isScroll: 0, //已经移动的距离
+     moveCurrency: 0, //移动中的高亮下标
+     step: 0, //每次移动距离
+     data: {
+         list: ['凌晨', '空腹', '早餐后', '午餐前', '午餐后', '晚餐前', '晚餐后', '睡前'],
+         isScrollNum: -2, //当前移动数量  [注意：值小于等于０]
+         showNum: 5, //显示个数
+         divHeight: 50 //div的高度
+     },
+     toggle: '',
+     slip: '',
+     li: '',
+     init: function() {
+         this.toggle = document.getElementsByClassName('toggle')[0];
+         this.slip = this.toggle.getElementsByClassName('slip')[0];
+         this.step = this.view().width / this.data.showNum;
+         this.isScroll = this.step * ((this.data.showNum - 1) / 2 + this.data.isScrollNum);
+         this.toggleStyle();
+         this.slipStyle();
+         this.addData();
+         this.liStyle();
+         this.scroll(this.isScroll);
+         this.lightStyle(-this.data.isScrollNum);
+         this.slip.addEventListener('touchstart', this.startMove.bind(this));
+         this.slip.addEventListener('touchmove', this.nowMove.bind(this));
+         this.slip.addEventListener('touchend', this.endMove.bind(this));
+
+     },
+     toggleStyle: function() {
+         this.toggle.style.backgroundColor = '#2cc0cf';
+         this.toggle.style.height = this.data.divHeight + 'px';
+         this.toggle.style.lineHeight = this.data.divHeight + 'px';
+         this.toggle.style.overflow = 'hidden';
+     },
+     slipStyle: function() {
+         this.slip.style.width = this.step * (this.data.list.length) + 'px';
+     },
+     liStyle: function() {
+         this.li = this.slip.getElementsByTagName('li');
+         for (var i = 0; i < this.li.length; i++) {
+             this.li[i].style.color = '#fff';
+             this.li[i].style.listStyle = 'none';
+             this.li[i].style.display = 'inline-block';
+             this.li[i].style.textAlign = 'center';
+             this.li[i].style.fontWeight = 600;
+             this.li[i].style.transition = 'all 150ms';
+             this.li[i].style.webkitTransition = 'all 150ms';
+         }
+     },
+     view: function() {
+         return {
+             width: document.documentElement.clientWidth || document.body.clientWidth,
+             height: document.documentElement.clientHeight || document.body.clientHeight
+         }
+     },
+     addData: function() {
+         for (var i = 0; i < this.data.list.length; i++) {
+             var li = document.createElement('li');
+             li.innerHTML = this.data.list[i];
+             li.style.width = this.step + 'px';
+             this.slip.appendChild(li);
+         }
+     },
+     lightStyle: function(curr) {
+         for (var i = 0; i < this.li.length; i++) {
+             this.li[i].style.opacity = 0.8;
+             this.li[i].style.fontSize = '14px';
+         }
+         this.li[curr].style.opacity = 1;
+         this.li[curr].style.fontSize = '18px';
+     },
+     startMove: function() {
+         var e = window.event || arguments[0];
+         this.startScroll = e.changedTouches[0].pageX;
+     },
+     nowMove: function() {
+         var e = window.event || arguments[0];
+         var figureScroll = e.changedTouches[0].pageX - this.startScroll;
+         var nowScroll = figureScroll + this.isScroll;
+         var isLight = figureScroll / this.step;
+         this.scroll(nowScroll);
+         //判断移动过程中是否高亮？
+         if (isLight > 0.5) {
+             this.moveCurrency = -this.data.isScrollNum - 1;
+         } else if (isLight < 0 && Math.abs(isLight) > 0.5) {
+             this.moveCurrency = -this.data.isScrollNum + 1;
+         }
+         if (this.moveCurrency < 0) {
+             this.moveCurrency = 0;
+         } else if (this.moveCurrency > this.li.length - 1) {
+             this.moveCurrency = this.li.length - 1;
+         }
+         this.lightStyle(this.moveCurrency);
+     },
+     endMove: function() {
+         var e = window.event || arguments[0];
+         this.endScroll = e.changedTouches[0].pageX - this.startScroll;
+         this.isScroll = this.endScroll / this.step;
+         if (this.isScroll > 0.5) {
+             this.data.isScrollNum++;
+         } else if (this.isScroll < 0 && Math.abs(this.isScroll) > 0.5) {
+             this.data.isScrollNum--;
+         }
+         if (this.data.isScrollNum < -this.li.length + 1) {
+             this.data.isScrollNum = -this.li.length + 1;
+         } else if (this.data.isScrollNum > 0) {
+             this.data.isScrollNum = 0;
+         }
+         this.isScroll = (this.data.isScrollNum + (this.data.showNum - 1) / 2) * this.step;
+         this.scroll(this.isScroll);
+         this.lightStyle(-this.data.isScrollNum);
+     },
+     scroll: function(scroll) {
+         this.slip.style.transform = 'translateX(' + scroll + 'px)';
+         this.slip.style.webkitTransform = 'translateX(' + scroll + 'px)';
+     }
+ }
+ toggle.init();</script>
+</body>
+</html>
