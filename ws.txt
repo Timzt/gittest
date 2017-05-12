@@ -1,0 +1,34 @@
+一、双击安装包安装，选择路径，建议选择除系统盘之外的盘符安装
+
+二、安装完成后启动,会提示注册
+
+注册时，在打开的License Activation窗口中选择“License server”，在输入框输入下面的网址：
+
+http://idea.iteblog.com/key.php
+
+点击：Activate即可。
+
+三、软件自动重启后会提示选择主题，除了第一个IDE选项不用更改，第二第三个选项都选择Darcula，点击确定
+
+四、进入软件界面后，File > Import Settings，选择【settings_2017.1.1.jar】 包导入成功后，重启WebStorm就大功告成
+
+了。
+
+五、关闭软件，复制汉化文件夹里的resources_zh.jar粘贴到安装目录下lib目录中即可正常使用。
+
+
+
+
+
+如果字体模糊，解决办法：
+
+1、 在安装目录例如 D:\Program Files (x86)\JetBrains\WebStorm 2017.1 下的 jre64 文件夹改个名字（随意改 只要不是
+
+jre64就行），如果改了名字无法启动则需要安装jre环境。。。
+
+
+2、安装oracle的jre环境 
+安装教程参考：
+http://jingyan.baidu.com/article/09ea3ede2b5f86c0aede39b9.html
+
+3、重新启动webstorm
